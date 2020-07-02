@@ -1,5 +1,26 @@
 [
 	{
+		"id": "$pluche_subpark00",
+		"width": 2,
+		"height": 2,
+		"type": "park",
+		"frames": [
+			{"bmp": "park.png"}],
+		"power": 0,
+		"water": 0,
+		"title": "Small park",
+		"text": "A small park for suburban areas. Perfect for a walk!",
+		"ordinal": 6,
+		"build time": 0,
+		"needs road": false,
+		"price":1500,
+		"monthly price": 5,
+		"influence pollution": -3,
+		"influence noise": -3,
+		"influence park": 28,
+		"requirements": [{"type":"RANK", "lvl":3}]
+	},
+	{
 		"id":"$suburbanzone_kulche00",
 		"author":"Kluche",
 		"type":"zone",
