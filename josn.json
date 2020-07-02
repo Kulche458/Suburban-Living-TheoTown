@@ -147,6 +147,20 @@
 		"zone radius":3
 	},
 	{
+		"id":"$pluche_mediumhouse2x2_00",
+		"type":"residential",
+		"width":2,
+		"height":2,
+		"level":2,
+		"people":33,
+		"frames":[{"bmp":"house2x2_0.png","w":64,"h":39,"count":4}],
+		"rotation aware":true,
+		"script":"lau.lua",
+		"zone":"$suburbanzone_kulche00",
+		"radius":3,
+		"zone radius":3
+	},
+	{
 		"id":"$pluche_decoz00",
 		"title":"Suburban Deco",
 		"text":"Some greenery for backyards.",
