@@ -150,6 +150,19 @@
 			{"bmp": "icon.png"}
 		]
 	},
+	{
+		"id":"$kulche_decos00",
+		"title":"Suburban Deco",
+		"text":"Some greenery for backyards.",
+		"width":1,
+		"height":1,
+		"type":"decoration",
+		"frames":[
+			{"bmp":"decotiles.png","w":32,"h":22,"count":3}],
+		"price":1,
+		"monthly price":0,
+		"meta":{"tags":{"decorator":{"zones":["$kulche_suburbanzone00"]}}}
+	},
 
 		//animation - 1
 
