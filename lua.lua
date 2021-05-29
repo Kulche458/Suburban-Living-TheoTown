@@ -1,5 +1,18 @@
 
+local buildings1x1
+local buildings2x2
+
 math.randomseed(os.time())
+
+function script:init()
+    buildings1x1 = Array{
+        Draft.getDraft('$kulche_suburbs_1x1_00')
+    }
+    buildings2x2 = Array{
+        Draft.getDraft('$kulche_suburbs_2x2_00'),
+        Draft.getDraft('$kulche_suburbs_2x2_01')
+    }
+end
 
 local function colors(x, y)
     -- choose random wall color from 7 provided
@@ -108,15 +121,32 @@ local function colors(x, y)
     -- align to road
     
     if settings.alignToRoad == 1 then
-        if Tile.hasRoad(x, y - 1) and Tile.hasRoad(x + 1, y - 1) then
-            Tile.setBuildingFrame(x, y, 0)
-        elseif Tile.hasRoad(x + 2, y) and Tile.hasRoad(x + 2, y + 1) then
-            Tile.setBuildingFrame(x, y, 1)
-        elseif Tile.hasRoad(x + 1, y + 2) and Tile.hasRoad(x, y + 2) then
-            Tile.setBuildingFrame(x, y, 2)
-        elseif Tile.hasRoad(x - 1, y) and Tile.hasRoad(x - 1, y - 1) then
-            Tile.setBuildingFrame(x, y, 3)
+
+        if buildings1x1:contains(Tile.getBuildingDraft(x, y)) then
+
+            if Tile.hasRoad(x, y - 1) then
+                Tile.setBuildingFrame(x, y, 0)
+            elseif Tile.hasRoad(x + 1, y) then
+                Tile.setBuildingFrame(x, y, 1)
+            elseif Tile.hasRoad(x, y + 1) then
+                Tile.setBuildingFrame(x, y, 2)
+            elseif Tile.hasRoad(x - 1, y) then
+                Tile.setBuildingFrame(x, y, 3)
+            end
+        
+        elseif buildings2x2:contains(Tile.getBuildingDraft(x, y)) then
+
+            if Tile.hasRoad(x, y - 1) and Tile.hasRoad(x + 1, y - 1) then
+                Tile.setBuildingFrame(x, y, 0)
+            elseif Tile.hasRoad(x + 2, y) and Tile.hasRoad(x + 2, y + 1) then
+                Tile.setBuildingFrame(x, y, 1)
+            elseif Tile.hasRoad(x + 1, y + 2) and Tile.hasRoad(x, y + 2) then
+                Tile.setBuildingFrame(x, y, 2)
+            elseif Tile.hasRoad(x - 1, y) and Tile.hasRoad(x - 1, y - 1) then
+                Tile.setBuildingFrame(x, y, 3)
+            end
         end
+
     end
 
 end
