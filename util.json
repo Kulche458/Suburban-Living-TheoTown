@@ -435,6 +435,7 @@
 		"zone": "$kulche_suburbanzone00",
 		"radius": 3,
 		"zone radius": 3,
+		"people": 20,
 		"animation":[
 			{"id": "$kulche_2x2_00_walls_0", "x": 0, "y": -16, "frame": 0, "color": "$kulche_color_white"},
 			{"id": "$kulche_2x2_00_walls_1", "x": 0, "y": -16, "frame": 1, "color": "$kulche_color_white"},
@@ -526,6 +527,7 @@
 		"zone": "$kulche_suburbanzone00",
 		"radius": 3,
 		"zone radius": 3,
+		"people": 20,
 		"animation":[
 			{"id": "$kulche_2x2_01_walls_0", "x": 0, "y": -16, "frame": 0, "color": "$kulche_color_white"},
 			{"id": "$kulche_2x2_01_walls_1", "x": 0, "y": -16, "frame": 1, "color": "$kulche_color_white"},
@@ -617,6 +619,7 @@
 		"zone": "$kulche_suburbanzone00",
 		"radius": 3,
 		"zone radius": 3,
+		"people": 4,
 		"animation":[
 			{"id": "$kulche_1x1_00_walls_0", "x": 0, "y": -10, "frame": 0, "color": "$kulche_color_white"},
 			{"id": "$kulche_1x1_00_walls_1", "x": 0, "y": -10, "frame": 1, "color": "$kulche_color_white"},
