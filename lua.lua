@@ -7,7 +7,8 @@ math.randomseed(os.time())
 function script:init()
     buildings1x1 = Array{
         Draft.getDraft('$kulche_suburbs_1x1_00'),
-        Draft.getDraft('$kulche_suburbs_1x1_01')
+        Draft.getDraft('$kulche_suburbs_1x1_01'),
+        Draft.getDraft('$kulche_suburbs_1x1_02')
     }
     buildings2x2 = Array{
         Draft.getDraft('$kulche_suburbs_2x2_00'),
