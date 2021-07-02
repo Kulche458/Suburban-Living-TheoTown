@@ -12,7 +12,8 @@ function script:init()
     }
     buildings2x2 = Array{
         Draft.getDraft('$kulche_suburbs_2x2_00'),
-        Draft.getDraft('$kulche_suburbs_2x2_01')
+        Draft.getDraft('$kulche_suburbs_2x2_01'),
+        Draft.getDraft('$kulche_suburbs_2x2_02')
     }
 end
 
