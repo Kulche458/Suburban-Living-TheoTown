@@ -7,3 +7,4 @@ to do:
   - night animations
   - snow frames
   - decoration buildings
+  - fix foundations/basesTM
