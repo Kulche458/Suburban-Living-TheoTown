@@ -815,7 +815,7 @@
 		"water": 0, //adjust
 		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
-		"people": 20,
+		"people": 9,
 		"animation":[
 			{"id": "$kulche_2x2_00_walls_0", "x": 0, "y": -16, "frame": 0, "color": "$kulche_color_white"},
 			{"id": "$kulche_2x2_00_walls_1", "x": 0, "y": -16, "frame": 1, "color": "$kulche_color_white"},
@@ -905,7 +905,7 @@
 		"water": 0, //adjust
 		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
-		"people": 20,
+		"people": 9,
 		"animation":[
 			{"id": "$kulche_2x2_01_walls_0", "x": 0, "y": -16, "frame": 0, "color": "$kulche_color_white"},
 			{"id": "$kulche_2x2_01_walls_1", "x": 0, "y": -16, "frame": 1, "color": "$kulche_color_white"},
@@ -995,7 +995,7 @@
 		"water": 0, //adjust
 		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
-		"people": 20,
+		"people": 9,
 		"animation":[
 			{"id": "$kulche_2x2_02_walls_0", "x": 0, "y": -15, "frame": 0, "color": "$kulche_color_white"},
 			{"id": "$kulche_2x2_02_walls_1", "x": 0, "y": -15, "frame": 1, "color": "$kulche_color_white"},
@@ -1085,7 +1085,7 @@
 		"water": 0, //adjust
 		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
-		"people": 4,
+		"people": 8,
 		"animation":[
 			{"id": "$kulche_1x1_00_walls_0", "x": 0, "y": -10, "frame": 0, "color": "$kulche_color_white"},
 			{"id": "$kulche_1x1_00_walls_1", "x": 0, "y": -10, "frame": 1, "color": "$kulche_color_white"},
@@ -1175,7 +1175,7 @@
 		"water": 0, //adjust
 		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
-		"people": 4,
+		"people": 8,
 		"animation":[
 			{"id": "$kulche_1x1_01_walls_0", "x": 0, "y": -10, "frame": 0, "color": "$kulche_color_white"},
 			{"id": "$kulche_1x1_01_walls_1", "x": 0, "y": -10, "frame": 1, "color": "$kulche_color_white"},
@@ -1265,7 +1265,7 @@
 	"water": 0, //adjust
 	"script": "lua.lua",
 	"zone": "$kulche_suburbanzone00",
-	"people": 4,
+	"people": 8,
 	"animation":[
 		{"id": "$kulche_1x1_02_walls_0", "x": 0, "y": -10, "frame": 0, "color": "$kulche_color_white"},
 		{"id": "$kulche_1x1_02_walls_1", "x": 0, "y": -10, "frame": 1, "color": "$kulche_color_white"},
