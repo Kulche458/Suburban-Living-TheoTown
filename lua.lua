@@ -127,25 +127,25 @@ local function colors(x, y)
 
         if buildings1x1:contains(Tile.getBuildingDraft(x, y)) then
 
-            if Tile.hasRoad(x, y - 1) then
+            if Tile.isRoad(x, y - 1) then
                 Tile.setBuildingFrame(x, y, 0)
-            elseif Tile.hasRoad(x + 1, y) then
+            elseif Tile.isRoad(x + 1, y) then
                 Tile.setBuildingFrame(x, y, 1)
-            elseif Tile.hasRoad(x, y + 1) then
+            elseif Tile.isRoad(x, y + 1) then
                 Tile.setBuildingFrame(x, y, 2)
-            elseif Tile.hasRoad(x - 1, y) then
+            elseif Tile.isRoad(x - 1, y) then
                 Tile.setBuildingFrame(x, y, 3)
             end
         
         elseif buildings2x2:contains(Tile.getBuildingDraft(x, y)) then
 
-            if Tile.hasRoad(x, y - 1) and Tile.hasRoad(x + 1, y - 1) then
+            if Tile.isRoad(x, y - 1) and Tile.isRoad(x + 1, y - 1) then
                 Tile.setBuildingFrame(x, y, 0)
-            elseif Tile.hasRoad(x + 2, y) and Tile.hasRoad(x + 2, y + 1) then
+            elseif Tile.isRoad(x + 2, y) and Tile.isRoad(x + 2, y + 1) then
                 Tile.setBuildingFrame(x, y, 1)
-            elseif Tile.hasRoad(x + 1, y + 2) and Tile.hasRoad(x, y + 2) then
+            elseif Tile.isRoad(x + 1, y + 2) and Tile.isRoad(x, y + 2) then
                 Tile.setBuildingFrame(x, y, 2)
-            elseif Tile.hasRoad(x - 1, y) and Tile.hasRoad(x - 1, y - 1) then
+            elseif Tile.isRoad(x - 1, y) and Tile.isRoad(x - 1, y - 1) then
                 Tile.setBuildingFrame(x, y, 3)
             end
         end
