@@ -1,5 +1,19 @@
 [
 	{
+		"id": "$kulche_suburbanroad00",
+		"ordinal": 1,
+		"type": "road",
+		"level": 1,
+		"speed": 0.9,
+		"frames": [
+			{"bmp": "road.png", "w": 32, "h": 16, "count": 16}
+		],
+		"price": 75, //to be adjusted
+		"monthly price": 1, //same
+		"title": "Suburban road",
+		"text": "A simple, cheap asphalt road. Does not support bridges or tunnels. Slightly slower than the country road."
+	},
+	{
 		"id": "$kulche_suburbs_settings00",
 		"type": "data",
 		"script": "settings.lua"
