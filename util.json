@@ -18,6 +18,11 @@
 		"type": "data",
 		"script": "settings.lua"
 	},
+	{
+		"id": "$kulche_suburbs_debug00",
+		"type": "data",
+		"script": "debug.lua"
+	},
 
 		//animation - 0
 
@@ -1485,6 +1490,7 @@
 	
 	{
 		"id": "$kulche_suburbs_1x1_00_UPG",
+		"auto build": false,
 		"width": 1,
 		"height": 1,
 		"type": "residential",

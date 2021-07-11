@@ -2,6 +2,9 @@
 local buildings1x1
 local buildings2x2
 
+local building_1x1_00
+local building_1x1_00_UPG
+
 math.randomseed(os.time())
 
 function script:init()
@@ -16,6 +19,8 @@ function script:init()
         Draft.getDraft('$kulche_suburbs_2x2_01'),
         Draft.getDraft('$kulche_suburbs_2x2_02')
     }
+    building_1x1_00 = Draft.getDraft('$kulche_suburbs_1x1_00')
+    building_1x1_00_UPG = Draft.getDraft('$kulche_suburbs_1x1_00_UPG')
 end
 
 local function colors(x, y)
@@ -153,6 +158,22 @@ local function colors(x, y)
 
     end
 
+end
+
+    -- upgrades
+    -- conditions: building older than 3 months, in park influence
+    -- if conditions met: 2% chance every day to upgrade to it's upgraded counterpart (if in max park infl)
+
+function script:daily(x, y, level)
+    if Tile.getBuildingDaysBuilt(x, y) > 90 then
+        if math.random() < Tile.getInfluence(Tile.INFLUENCE_PARK, x, y) * 0.02 then
+
+            if Tile.getBuildingDraft(x, y) == building_1x1_00 then
+                Builder.remove(x, y)
+                Builder.buildBuilding(building_1x1_00_UPG, x, y)
+            end
+        end
+    end
 end
 
 function script:event(x, y, level, event)
