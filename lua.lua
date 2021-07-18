@@ -9,6 +9,9 @@ local building_1x1_01_UPG
 local building_1x1_02
 local building_1x1_02_UPG
 
+local building_2x2_00
+local building_2x2_00_UPG
+
 math.randomseed(os.time())
 
 function script:init()
@@ -23,7 +26,8 @@ function script:init()
     buildings2x2 = Array{
         Draft.getDraft('$kulche_suburbs_2x2_00'),
         Draft.getDraft('$kulche_suburbs_2x2_01'),
-        Draft.getDraft('$kulche_suburbs_2x2_02')
+        Draft.getDraft('$kulche_suburbs_2x2_02'),
+        Draft.getDraft('$kulche_suburbs_2x2_00_UPG')
     }
     building_1x1_00 = Draft.getDraft('$kulche_suburbs_1x1_00')
     building_1x1_00_UPG = Draft.getDraft('$kulche_suburbs_1x1_00_UPG')
@@ -31,6 +35,9 @@ function script:init()
     building_1x1_01_UPG = Draft.getDraft('$kulche_suburbs_1x1_01_UPG')
     building_1x1_02 = Draft.getDraft('$kulche_suburbs_1x1_02')
     building_1x1_02_UPG = Draft.getDraft('$kulche_suburbs_1x1_02_UPG')
+    
+    building_2x2_00 = Draft.getDraft('$kulche_suburbs_2x2_00')
+    building_2x2_00_UPG = Draft.getDraft('$kulche_suburbs_2x2_00_UPG')
 end
 
 local function colors(x, y)
@@ -191,6 +198,11 @@ function script:daily(x, y, level)
             if Tile.getBuildingDraft(x, y) == building_1x1_02 then
                 Builder.remove(x, y)
                 Builder.buildBuilding(building_1x1_02_UPG, x, y)
+            end
+            
+            if Tile.getBuildingDraft(x, y) == building_2x2_00 then
+                Builder.remove(x, y)
+                Builder.buildBuilding(building_2x2_00_UPG, x, y)
             end
         end
     end
