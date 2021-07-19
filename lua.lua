@@ -11,6 +11,8 @@ local building_1x1_02_UPG
 
 local building_2x2_00
 local building_2x2_00_UPG
+local building_2x2_01
+local building_2x2_01_UPG
 
 math.randomseed(os.time())
 
@@ -27,7 +29,8 @@ function script:init()
         Draft.getDraft('$kulche_suburbs_2x2_00'),
         Draft.getDraft('$kulche_suburbs_2x2_01'),
         Draft.getDraft('$kulche_suburbs_2x2_02'),
-        Draft.getDraft('$kulche_suburbs_2x2_00_UPG')
+        Draft.getDraft('$kulche_suburbs_2x2_00_UPG'),
+        Draft.getDraft('$kulche_suburbs_2x2_01_UPG')
     }
     building_1x1_00 = Draft.getDraft('$kulche_suburbs_1x1_00')
     building_1x1_00_UPG = Draft.getDraft('$kulche_suburbs_1x1_00_UPG')
@@ -38,6 +41,8 @@ function script:init()
     
     building_2x2_00 = Draft.getDraft('$kulche_suburbs_2x2_00')
     building_2x2_00_UPG = Draft.getDraft('$kulche_suburbs_2x2_00_UPG')
+    building_2x2_01 = Draft.getDraft('$kulche_suburbs_2x2_01')
+    building_2x2_01_UPG = Draft.getDraft('$kulche_suburbs_2x2_01_UPG')
 end
 
 local function colors(x, y)
@@ -178,12 +183,12 @@ local function colors(x, y)
 end
 
     -- upgrades
-    -- conditions: building older than 3 months, in park influence
-    -- if conditions met: 2% chance every day to upgrade to it's upgraded counterpart (if in max park infl)
+    -- conditions: building older than 6 months, in park influence
+    -- if conditions met: 0.5% chance every day to upgrade to it's upgraded counterpart (if in max park infl)
 
 function script:daily(x, y, level)
-    if Tile.getBuildingDaysBuilt(x, y) > 90 then
-        if math.random() < Tile.getInfluence(Tile.INFLUENCE_PARK, x, y) * 0.02 then
+    if Tile.getBuildingDaysBuilt(x, y) > 180 then
+        if math.random() < Tile.getInfluence(Tile.INFLUENCE_PARK, x, y) * 0.005 then
 
             if Tile.getBuildingDraft(x, y) == building_1x1_00 then
                 Builder.remove(x, y)
@@ -203,6 +208,11 @@ function script:daily(x, y, level)
             if Tile.getBuildingDraft(x, y) == building_2x2_00 then
                 Builder.remove(x, y)
                 Builder.buildBuilding(building_2x2_00_UPG, x, y)
+            end
+            
+            if Tile.getBuildingDraft(x, y) == building_2x2_01 then
+                Builder.remove(x, y)
+                Builder.buildBuilding(building_2x2_01_UPG, x, y)
             end
         end
     end
