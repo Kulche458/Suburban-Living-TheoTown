@@ -9,3 +9,6 @@ to do:
   - more decoration buildings
   - fix foundations/basesTM
   - improve upgrading functionality (more conditions?)
+  - asjust power/water
+  - add preview frames
+  - allow choosing color combinations (+ settings)
