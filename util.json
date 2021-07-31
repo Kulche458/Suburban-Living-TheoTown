@@ -1576,6 +1576,10 @@
 		]
 	},
 
+		//utilities formula:
+
+			// ceil ( default_util * 0.8 )
+
 		//building - 0
 
 	{
@@ -1587,8 +1591,8 @@
 			{"bmp": "2x2_0_base.png", "w": 64, "count": 4}
 		],
 		"rotation aware": true,
-		"power": 0, //adjust
-		"water": 0, //adjust
+		"power": -2,
+		"water": -2,
 		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
 		"people": 9,
@@ -1677,8 +1681,8 @@
 			{"bmp": "2x2_1_base.png", "w": 64, "count": 4}
 		],
 		"rotation aware": true,
-		"power": 0, //adjust
-		"water": 0, //adjust
+		"power": -2,
+		"water": -2,
 		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
 		"people": 9,
@@ -1767,8 +1771,8 @@
 			{"bmp": "2x2_2_base.png", "w": 64, "count": 4}
 		],
 		"rotation aware": true,
-		"power": 0, //adjust
-		"water": 0, //adjust
+		"power": -2,
+		"water": -2,
 		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
 		"people": 9,
@@ -1857,8 +1861,8 @@
 			{"bmp": "1x1_0_base.png", "w": 32, "count": 4}
 		],
 		"rotation aware": true,
-		"power": 0, //adjust
-		"water": 0, //adjust
+		"power": -1,
+		"water": -1,
 		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
 		"people": 8,
@@ -1975,8 +1979,8 @@
 			{"bmp": "1x1_1_base.png", "w": 32, "count": 4}
 		],
 		"rotation aware": true,
-		"power": 0, //adjust
-		"water": 0, //adjust
+		"power": -1,
+		"water": -1,
 		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
 		"people": 8,
@@ -2098,8 +2102,8 @@
 			{"bmp": "1x1_2_base.png", "w": 32, "count": 4}
 		],
 		"rotation aware": true,
-		"power": 0, //adjust
-		"water": 0, //adjust
+		"power": -1,
+		"water": -1,
 		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
 		"people": 8,
@@ -2217,8 +2221,8 @@
 			{"bmp": "1x1_0_base_UPG.png", "w": 32, "count": 4}
 		],
 		"rotation aware": true,
-		"power": 0, //adjust
-		"water": 0, //adjust
+		"power": -2,
+		"water": -2,
 		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
 		"people": 13,
@@ -2357,11 +2361,12 @@
 			{"bmp": "1x1_1_base_UPG.png", "w": 32, "count": 4}
 		],
 		"rotation aware": true,
-		"power": 0, //adjust
-		"water": 0, //adjust
+		"power": -2,
+		"water": -2,
 		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
 		"people": 13,
+		"animation night light probability":0.45,
 		"animation":[
 			{"id": "$kulche_1x1_01_walls_0_UPG", "x": 0, "y": -14, "frame": 0, "color": "$kulche_color_white"},
 			{"id": "$kulche_1x1_01_walls_1_UPG", "x": 0, "y": -14, "frame": 1, "color": "$kulche_color_white"},
@@ -2432,7 +2437,63 @@
 			{"id": "$kulche_1x1_01_hedge_0_UPG", "x": 0, "y": -6, "frame": 0},
 			{"id": "$kulche_1x1_01_hedge_1_UPG", "x": 0, "y": -6, "frame": 1},
 			{"id": "$kulche_1x1_01_hedge_2_UPG", "x": 0, "y": -6, "frame": 2},
-			{"id": "$kulche_1x1_01_hedge_3_UPG", "x": 0, "y": -6, "frame": 3}
+			{"id": "$kulche_1x1_01_hedge_3_UPG", "x": 0, "y": -6, "frame": 3},
+
+				//night anim
+
+			{"id": "1x1l", "x": 21, "y": -9, "frame": 0},
+			{"id": "1x2l", "x": 18, "y": -4, "frame": 0},
+			{"id": "1x2l", "x": 24, "y": -3, "frame": 0},
+			{"id": "1x2l", "x": 22, "y": -6, "frame": 0},
+			{"id": "1x2l", "x": 24, "y": -7, "frame": 0},
+			{"id": "1x2l", "x": 18, "y": 0, "frame": 0},
+			{"id": "1x2l", "x": 20, "y": -1, "frame": 0},
+			{"id": "1x2l", "x": 13, "y": -5, "frame": 0},
+			{"id": "1x2l", "x": 15, "y": -4, "frame": 0},
+			{"id": "1x2l", "x": 7, "y": -4, "frame": 0},
+			{"id": "1x2l", "x": 9, "y": -3, "frame": 0},
+			{"id": "1x2l", "x": 7, "y": -8, "frame": 0},
+
+			{"id": "1x1l", "x": 8, "y": -9, "frame": 1},
+			{"id": "1x2l", "x": 5, "y": -3, "frame": 1},
+			{"id": "1x2l", "x": 11, "y": -4, "frame": 1},
+			{"id": "1x2l", "x": 20, "y": -7, "frame": 1},
+			{"id": "1x2l", "x": 22, "y": -8, "frame": 1},
+			{"id": "1x2l", "x": 14, "y": 0, "frame": 1},
+			{"id": "1x2l", "x": 16, "y": -1, "frame": 1},
+			{"id": "1x2l", "x": 9, "y": -1, "frame": 1},
+			{"id": "1x2l", "x": 11, "y": 0, "frame": 1},
+			{"id": "1x2l", "x": 5, "y": -7, "frame": 1},
+			{"id": "1x2l", "x": 7, "y": -6, "frame": 1},
+			{"id": "1x2l", "x": 14, "y": -4, "frame": 1},
+
+			{"id": "1x1l", "x": 19, "y": -8, "frame": 2},
+			{"id": "1x2l", "x": 16, "y": 1, "frame": 2},
+			{"id": "1x2l", "x": 22, "y": -6, "frame": 2},
+			{"id": "1x2l", "x": 16, "y": -3, "frame": 2},
+			{"id": "1x2l", "x": 18, "y": -4, "frame": 2},
+			{"id": "1x2l", "x": 20, "y": -1, "frame": 2},
+			{"id": "1x2l", "x": 22, "y": -2, "frame": 2},
+			{"id": "1x2l", "x": 5, "y": -7, "frame": 2},
+			{"id": "1x2l", "x": 9, "y": -5, "frame": 2},
+			{"id": "1x2l", "x": 13, "y": -3, "frame": 2},
+			{"id": "1x2l", "x": 5, "y": -3, "frame": 2},
+			{"id": "1x2l", "x": 7, "y": -2, "frame": 2},
+			{"id": "1x2l", "x": 13, "y": 1, "frame": 2},
+
+			{"id": "1x1l", "x": 10, "y": -8, "frame": 3},
+			{"id": "1x2l", "x": 13, "y": 1, "frame": 3},
+			{"id": "1x2l", "x": 7, "y": -6, "frame": 3},
+			{"id": "1x2l", "x": 11, "y": -4, "frame": 3},
+			{"id": "1x2l", "x": 13, "y": -3, "frame": 3},
+			{"id": "1x2l", "x": 16, "y": 1, "frame": 3},
+			{"id": "1x2l", "x": 18, "y": 0, "frame": 3},
+			{"id": "1x2l", "x": 16, "y": -3, "frame": 3},
+			{"id": "1x2l", "x": 20, "y": -5, "frame": 3},
+			{"id": "1x2l", "x": 24, "y": -7, "frame": 3},
+			{"id": "1x2l", "x": 7, "y": -2, "frame": 3},
+			{"id": "1x2l", "x": 9, "y": -1, "frame": 3},
+			{"id": "1x2l", "x": 24, "y": -3, "frame": 3}
 		]
 	},
 	
@@ -2448,8 +2509,8 @@
 			{"bmp": "1x1_2_base_UPG.png", "w": 32, "count": 4}
 		],
 		"rotation aware": true,
-		"power": 0, //adjust
-		"water": 0, //adjust
+		"power": -2,
+		"water": -2,
 		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
 		"people": 13,
@@ -2539,8 +2600,8 @@
 			{"bmp": "2x2_0_base_UPG.png", "w": 64, "count": 4}
 		],
 		"rotation aware": true,
-		"power": 0, //adjust
-		"water": 0, //adjust
+		"power": -4,
+		"water": -4,
 		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
 		"people": 16,
@@ -2630,8 +2691,8 @@
 			{"bmp": "2x2_1_base_UPG.png", "w": 64, "count": 4}
 		],
 		"rotation aware": true,
-		"power": 0, //adjust
-		"water": 0, //adjust
+		"power": -4,
+		"water": -4,
 		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
 		"people": 16,
@@ -2721,8 +2782,8 @@
 			{"bmp": "2x2_2_base_UPG.png", "w": 64, "count": 4}
 		],
 		"rotation aware": true,
-		"power": 0, //adjust
-		"water": 0, //adjust
+		"power": -4,
+		"water": -4,
 		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
 		"people": 16,
