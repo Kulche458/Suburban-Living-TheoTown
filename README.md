@@ -18,4 +18,4 @@ to do, later:
 
 (unprioritised)
 
-**Latest release: preview version v0.1
+**Latest release: preview version v0.1**
