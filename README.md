@@ -1,14 +1,21 @@
 # Suburban-Living-TheoTown
 
-to do:
-  
-  - new variants (1x1, 2x2)
+to do, now:
+
   - higher level houses (*maybe* TT)
   - night animations
+  - fix foundations/basesTM
+  - adjust power/water
+  - add preview frames
+
+to do, later:
+  
+  - new variants (1x1, 2x2)
   - snow frames
   - more decoration buildings
-  - fix foundations/basesTM
   - improve upgrading functionality (more conditions?)
-  - asjust power/water
-  - add preview frames
   - allow choosing color combinations (+ settings)
+
+(unprioritised)
+
+**Latest release: preview version v0.1
