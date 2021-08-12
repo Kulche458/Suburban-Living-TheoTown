@@ -3,9 +3,7 @@
 to do, now:
 
   - higher level houses (*maybe* TT)
-  - night animations
   - fix foundations/basesTM
-  - add preview frames
 
 to do, later:
   
@@ -17,4 +15,4 @@ to do, later:
 
 (unprioritised)
 
-**Latest release: preview version v0.1**
+**Latest release: version v0.2**
