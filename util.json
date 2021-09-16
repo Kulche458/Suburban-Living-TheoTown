@@ -189,6 +189,8 @@
 		"type":"decoration",
 		"frames":[
 			{"bmp":"decotiles.png","w":32,"count":5}],
+		"frames winter":[
+			{"bmp":"decotiles_winter.png","w":32,"count":5}],
 		"price":1,
 		"monthly price":0,
 		"meta":{"tags":{"decorator":{"zones":["$kulche_suburbanzone00"]}}}
