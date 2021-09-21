@@ -3,12 +3,11 @@
 to do, now:
 
   - higher level houses (*maybe* TT)
-  - fix foundations/basesTM
+  - snow frames (i'm going to dead)
 
 to do, later:
   
   - new variants (1x1, 2x2)
-  - snow frames (i'm going to dead)
   - more decoration buildings
   - improve upgrading functionality (more conditions?)
   - allow choosing color combinations (+ settings)
