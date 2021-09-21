@@ -1511,6 +1511,34 @@
 			{"bmp": "2x2_0_details_UPG.png", "x": 192, "w": 64}
 		]
 	},
+	{
+		"id": "$kulche_2x2_00_winter_0_UPG",
+		"type": "animation",
+		"frames": [
+			{"bmp": "2x2_0_winter_UPG.png", "x": 0, "w": 64}
+		]
+	},
+	{
+		"id": "$kulche_2x2_00_winter_1_UPG",
+		"type": "animation",
+		"frames": [
+			{"bmp": "2x2_0_winter_UPG.png", "x": 64, "w": 64}
+		]
+	},
+	{
+		"id": "$kulche_2x2_00_winter_2_UPG",
+		"type": "animation",
+		"frames": [
+			{"bmp": "2x2_0_winter_UPG.png", "x": 128, "w": 64}
+		]
+	},
+	{
+		"id": "$kulche_2x2_00_winter_3_UPG",
+		"type": "animation",
+		"frames": [
+			{"bmp": "2x2_0_winter_UPG.png", "x": 192, "w": 64}
+		]
+	},
 
 		//animation - 1 - UPGRADED
 
@@ -3072,6 +3100,13 @@
 			{"id": "$kulche_2x2_00_details_1_UPG", "x": 0, "y": -24, "frame": 1},
 			{"id": "$kulche_2x2_00_details_2_UPG", "x": 0, "y": -24, "frame": 2},
 			{"id": "$kulche_2x2_00_details_3_UPG", "x": 0, "y": -24, "frame": 3},
+
+				//winter
+			
+			{"id": "$kulche_2x2_00_winter_0_UPG", "x": 0, "y": -24, "frame": 0, "in winter": true},
+			{"id": "$kulche_2x2_00_winter_1_UPG", "x": 0, "y": -24, "frame": 1, "in winter": true},
+			{"id": "$kulche_2x2_00_winter_2_UPG", "x": 0, "y": -24, "frame": 2, "in winter": true},			
+			{"id": "$kulche_2x2_00_winter_3_UPG", "x": 0, "y": -24, "frame": 3, "in winter": true},
 
 				//hedge
 
