@@ -878,6 +878,34 @@
 			{"bmp": "1x1_1_details.png", "x": 96, "w": 32}
 		]
 	},
+	{
+		"id": "$kulche_1x1_01_winter_0",
+		"type": "animation",
+		"frames": [
+			{"bmp": "1x1_1_winter.png", "x": 0, "w": 32}
+		]
+	},
+	{
+		"id": "$kulche_1x1_01_winter_1",
+		"type": "animation",
+		"frames": [
+			{"bmp": "1x1_1_winter.png", "x": 32, "w": 32}
+		]
+	},
+	{
+		"id": "$kulche_1x1_01_winter_2",
+		"type": "animation",
+		"frames": [
+			{"bmp": "1x1_1_winter.png", "x": 64, "w": 32}
+		]
+	},
+	{
+		"id": "$kulche_1x1_01_winter_3",
+		"type": "animation",
+		"frames": [
+			{"bmp": "1x1_1_winter.png", "x": 96, "w": 32}
+		]
+	},
 	
 
 		//animation - 2 - 1x1
@@ -1165,6 +1193,34 @@
 			{"bmp": "1x1_0_details_UPG.png", "x": 96, "w": 32}
 		]
 	},
+	{
+		"id": "$kulche_1x1_00_winter_0_UPG",
+		"type": "animation",
+		"frames": [
+			{"bmp": "1x1_0_winter_UPG.png", "x": 0, "w": 32}
+		]
+	},
+	{
+		"id": "$kulche_1x1_00_winter_1_UPG",
+		"type": "animation",
+		"frames": [
+			{"bmp": "1x1_0_winter_UPG.png", "x": 32, "w": 32}
+		]
+	},
+	{
+		"id": "$kulche_1x1_00_winter_2_UPG",
+		"type": "animation",
+		"frames": [
+			{"bmp": "1x1_0_winter_UPG.png", "x": 64, "w": 32}
+		]
+	},
+	{
+		"id": "$kulche_1x1_00_winter_3_UPG",
+		"type": "animation",
+		"frames": [
+			{"bmp": "1x1_0_winter_UPG.png", "x": 96, "w": 32}
+		]
+	},
 
 		//animation - 1 - 1x1 - UPGRADED
 
@@ -1306,6 +1362,34 @@
 		"speed": 0,
 		"frames": [
 			{"bmp": "1x1_1_details_UPG.png", "x": 96, "w": 32}
+		]
+	},
+	{
+		"id": "$kulche_1x1_01_winter_0_UPG",
+		"type": "animation",
+		"frames": [
+			{"bmp": "1x1_1_winter_UPG.png", "x": 0, "w": 32}
+		]
+	},
+	{
+		"id": "$kulche_1x1_01_winter_1_UPG",
+		"type": "animation",
+		"frames": [
+			{"bmp": "1x1_1_winter_UPG.png", "x": 32, "w": 32}
+		]
+	},
+	{
+		"id": "$kulche_1x1_01_winter_2_UPG",
+		"type": "animation",
+		"frames": [
+			{"bmp": "1x1_1_winter_UPG.png", "x": 64, "w": 32}
+		]
+	},
+	{
+		"id": "$kulche_1x1_01_winter_3_UPG",
+		"type": "animation",
+		"frames": [
+			{"bmp": "1x1_1_winter_UPG.png", "x": 96, "w": 32}
 		]
 	},
 
@@ -2590,6 +2674,13 @@
 			{"id": "$kulche_1x1_01_details_2", "x": 0, "y": -4, "frame": 2},
 			{"id": "$kulche_1x1_01_details_3", "x": 0, "y": -4, "frame": 3},
 
+				//winter
+			
+			{"id": "$kulche_1x1_01_winter_0", "x": 0, "y": -12, "frame": 0, "in winter": true},
+			{"id": "$kulche_1x1_01_winter_1", "x": 0, "y": -12, "frame": 1, "in winter": true},
+			{"id": "$kulche_1x1_01_winter_2", "x": 0, "y": -12, "frame": 2, "in winter": true},			
+			{"id": "$kulche_1x1_01_winter_3", "x": 0, "y": -12, "frame": 3, "in winter": true},
+
 				//hedge
 
 			{"id": "$kulche_1x1_01_hedge_0", "x": 0, "y": -6, "frame": 0},
@@ -2832,6 +2923,13 @@
 			{"id": "$kulche_1x1_00_details_2_UPG", "x": 0, "y": -8, "frame": 2},
 			{"id": "$kulche_1x1_00_details_3_UPG", "x": 0, "y": -8, "frame": 3},
 
+				//winter
+			
+			{"id": "$kulche_1x1_00_winter_0_UPG", "x": 0, "y": -16, "frame": 0, "in winter": true},
+			{"id": "$kulche_1x1_00_winter_1_UPG", "x": 0, "y": -16, "frame": 1, "in winter": true},
+			{"id": "$kulche_1x1_00_winter_2_UPG", "x": 0, "y": -16, "frame": 2, "in winter": true},			
+			{"id": "$kulche_1x1_00_winter_3_UPG", "x": 0, "y": -16, "frame": 3, "in winter": true},
+
 				//hedge
 
 			{"id": "$kulche_1x1_00_hedge_0_UPG", "x": 0, "y": -7, "frame": 0},
@@ -2971,6 +3069,13 @@
 			{"id": "$kulche_1x1_01_details_1_UPG", "x": 0, "y": -8, "frame": 1},
 			{"id": "$kulche_1x1_01_details_2_UPG", "x": 0, "y": -8, "frame": 2},
 			{"id": "$kulche_1x1_01_details_3_UPG", "x": 0, "y": -8, "frame": 3},
+
+				//winter
+			
+			{"id": "$kulche_1x1_01_winter_0_UPG", "x": 0, "y": -16, "frame": 0, "in winter": true},
+			{"id": "$kulche_1x1_01_winter_1_UPG", "x": 0, "y": -16, "frame": 1, "in winter": true},
+			{"id": "$kulche_1x1_01_winter_2_UPG", "x": 0, "y": -16, "frame": 2, "in winter": true},			
+			{"id": "$kulche_1x1_01_winter_3_UPG", "x": 0, "y": -16, "frame": 3, "in winter": true},
 
 				//hedge
 
