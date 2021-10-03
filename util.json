@@ -8,6 +8,9 @@
 		"frames": [
 			{"bmp": "road.png", "w": 32, "h": 16, "count": 16}
 		],
+		"frames winter": [
+			{"bmp": "road_winter.png", "w": 32, "h": 16, "count": 16}
+		],
 		"price": 75, //to be adjusted
 		"monthly price": 1, //same
 		"title": "Suburban road",
