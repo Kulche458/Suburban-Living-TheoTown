@@ -75,6 +75,42 @@
 		]
 	},
 	{
+		"id": "$kulche_2x2_00_tt_hedge_0",
+		"type": "animation",
+		"speed": 0,
+		"frames": [
+			{"bmp": "empty.png"},
+			{"bmp": "2x2_0_tt_hedge.png", "x": 0, "w": 64}
+		]
+	},
+	{
+		"id": "$kulche_2x2_00_tt_hedge_1",
+		"type": "animation",
+		"speed": 0,
+		"frames": [
+			{"bmp": "empty.png"},
+			{"bmp": "2x2_0_tt_hedge.png", "x": 64, "w": 64}
+		]
+	},
+	{
+		"id": "$kulche_2x2_00_tt_hedge_2",
+		"type": "animation",
+		"speed": 0,
+		"frames": [
+			{"bmp": "empty.png"},
+			{"bmp": "2x2_0_tt_hedge.png", "x": 128, "w": 64}
+		]
+	},
+	{
+		"id": "$kulche_2x2_00_tt_hedge_3",
+		"type": "animation",
+		"speed": 0,
+		"frames": [
+			{"bmp": "empty.png"},
+			{"bmp": "2x2_0_tt_hedge.png", "x": 192, "w": 64}
+		]
+	},
+	{
 		"id": "$kulche_2x2_00_tt_details_0",
 		"type": "animation",
 		"speed": 0,
@@ -104,6 +140,34 @@
 		"speed": 0,
 		"frames": [
 			{"bmp": "2x2_0_tt_details.png", "x": 192, "w": 64}
+		]
+	},
+	{
+		"id": "$kulche_2x2_00_tt_winter_0",
+		"type": "animation",
+		"frames": [
+			{"bmp": "2x2_0_tt_winter.png", "x": 0, "w": 64}
+		]
+	},
+	{
+		"id": "$kulche_2x2_00_tt_winter_1",
+		"type": "animation",
+		"frames": [
+			{"bmp": "2x2_0_tt_winter.png", "x": 64, "w": 64}
+		]
+	},
+	{
+		"id": "$kulche_2x2_00_tt_winter_2",
+		"type": "animation",
+		"frames": [
+			{"bmp": "2x2_0_tt_winter.png", "x": 128, "w": 64}
+		]
+	},
+	{
+		"id": "$kulche_2x2_00_tt_winter_3",
+		"type": "animation",
+		"frames": [
+			{"bmp": "2x2_0_tt_winter.png", "x": 192, "w": 64}
 		]
 	},
 
@@ -192,11 +256,21 @@
 			{"id": "$kulche_2x2_00_tt_details_0", "x": 0, "y": -24, "frame": 0},
 			{"id": "$kulche_2x2_00_tt_details_1", "x": 0, "y": -24, "frame": 1},
 			{"id": "$kulche_2x2_00_tt_details_2", "x": 0, "y": -24, "frame": 2},
-			{"id": "$kulche_2x2_00_tt_details_3", "x": 0, "y": -24, "frame": 3}
+			{"id": "$kulche_2x2_00_tt_details_3", "x": 0, "y": -24, "frame": 3},
 
 				//winter
+			
+			{"id": "$kulche_2x2_00_tt_winter_0", "x": 0, "y": -24, "frame": 0, "in winter": true},
+			{"id": "$kulche_2x2_00_tt_winter_1", "x": 0, "y": -24, "frame": 1, "in winter": true},
+			{"id": "$kulche_2x2_00_tt_winter_2", "x": 0, "y": -24, "frame": 2, "in winter": true},			
+			{"id": "$kulche_2x2_00_tt_winter_3", "x": 0, "y": -24, "frame": 3, "in winter": true},
 
 				//hedge
+
+			{"id": "$kulche_2x2_00_tt_hedge_0", "x": 0, "y": -18, "frame": 0},
+			{"id": "$kulche_2x2_00_tt_hedge_1", "x": 0, "y": -18, "frame": 1},
+			{"id": "$kulche_2x2_00_tt_hedge_2", "x": 0, "y": -18, "frame": 2},
+			{"id": "$kulche_2x2_00_tt_hedge_3", "x": 0, "y": -18, "frame": 3}
 
 				//night anim
 
