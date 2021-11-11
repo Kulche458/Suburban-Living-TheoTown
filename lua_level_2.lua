@@ -3,6 +3,7 @@ local buildings1x1_tt
 local buildings2x2_tt
 
 local building_1x1_00_tt
+local building_1x1_01_tt
 
 local building_2x2_00_tt
 local building_2x2_01_tt
@@ -11,13 +12,15 @@ math.randomseed(os.time())
 
 function script:init()
     buildings1x1_tt = Array{
-        Draft.getDraft('$kulche_suburbs_1x1_00_tt')
+        Draft.getDraft('$kulche_suburbs_1x1_00_tt'),
+        Draft.getDraft('$kulche_suburbs_1x1_01_tt')
     }
     buildings2x2_tt = Array{
         Draft.getDraft('$kulche_suburbs_2x2_00_tt'),
         Draft.getDraft('$kulche_suburbs_2x2_01_tt')
     }
     building_1x1_00_tt = Draft.getDraft('$kulche_suburbs_1x1_00_tt')
+    building_1x1_01_tt = Draft.getDraft('$kulche_suburbs_1x1_01_tt')
     
     building_2x2_00_tt = Draft.getDraft('$kulche_suburbs_2x2_00_tt')
     building_2x2_01_tt = Draft.getDraft('$kulche_suburbs_2x2_01_tt')
