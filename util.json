@@ -17,6 +17,24 @@
 		"text": "A simple, cheap asphalt road. Does not support bridges or tunnels. Slightly slower than the country road."
 	},
 	{
+		"id": "$kulche_suburbanpark00",
+		"type": "park",
+		"ordinal": 5,
+		"width": 2,
+		"height": 2,
+		"rotation aware": true,
+		"frames":[
+			{"bmp": "park_0.png", "w": 64, "count": 4}
+		],
+		"price": 0,
+		"monthly price": 0,
+		"power": -2,
+		"water": 0,
+		"influence park": 10,
+		"title": "Small park",
+		"text": "It's a small corner park, for a small town."
+	},
+	{
 		"id": "$kulche_suburbs_settings00",
 		"type": "data",
 		"script": "settings.lua"
