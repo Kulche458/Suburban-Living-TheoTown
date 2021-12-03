@@ -14,7 +14,9 @@
 		"price": 75, //to be adjusted
 		"monthly price": 1, //same
 		"title": "Suburban road",
-		"text": "A simple, cheap asphalt road. Does not support bridges or tunnels. Slightly slower than the country road."
+		"text": "A simple, cheap asphalt road. Does not support bridges or tunnels. Slightly slower than the country road. Heavy vehicles are forbidden from using this road.",
+		"flag normal": false,
+		"flag lkw": true
 	},
 	{
 		"id": "$kulche_suburbanpark00",
