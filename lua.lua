@@ -52,43 +52,45 @@ end
 
 local function colors(x, y)
     -- choose random wall color from 7 provided
-    local walls_animation_count = 28
-    local roof_animation_count = 16
-    for i = 1, walls_animation_count+roof_animation_count do
+    for i = 5, 49 do
         Tile.setBuildingAnimationFrame(x, y, 1, i)
         Tile.pauseBuildingAnimation(x, y, i)
     end
-    for i = 53, 56 do
+    for i = 1, 4 do
+        Tile.setBuildingAnimationFrame(x, y, 1, i)
+        Tile.pauseBuildingAnimation(x, y, i)
+    end
+    for i = 57, 60 do
         Tile.setBuildingAnimationFrame(x, y, 1, i)
         Tile.pauseBuildingAnimation(x, y, i)
     end
 
-    local walls_color = math.random(1, walls_animation_count/4)
+    local walls_color = math.random(1, 7)
     if walls_color == 1 then
-        walls_animation = 1 -- set first animation index to 1
+        walls_animation = 5 -- set first animation index to 1
     elseif walls_color == 2 then
-        walls_animation = 5 -- set first animation index to 5
+        walls_animation = 9 -- set first animation index to 5
     elseif walls_color == 3 then
-        walls_animation = 9 -- set first animation index to 9
+        walls_animation = 13 -- set first animation index to 9
     elseif walls_color == 4 then
-        walls_animation = 13 -- set first animation index to 13
+        walls_animation = 17 -- set first animation index to 13
     elseif walls_color == 5 then
-        walls_animation = 17 -- set first animation index to 17
+        walls_animation = 21 -- set first animation index to 17
     elseif walls_color == 6 then
-        walls_animation = 21 -- set first animation index to 21
+        walls_animation = 25 -- set first animation index to 21
     elseif walls_color == 7 then
-        walls_animation = 25 -- set first animation index to 25
+        walls_animation = 29 -- set first animation index to 25
     end
     
-    local roof_color = math.random(1, roof_animation_count/4)
+    local roof_color = math.random(1, 4)
     if roof_color == 1 then
-        roof_animation = 29
-    elseif roof_color == 2 then
         roof_animation = 33
-    elseif roof_color == 3 then
+    elseif roof_color == 2 then
         roof_animation = 37
-    elseif roof_color == 4 then
+    elseif roof_color == 3 then
         roof_animation = 41
+    elseif roof_color == 4 then
+        roof_animation = 45
     end
 
     Tile.setBuildingAnimationFrame(x, y, 2, walls_animation)
@@ -113,43 +115,79 @@ local function colors(x, y)
 
     -- hedges
 
-    if settings.placeHedges == 1 then
-        Tile.setBuildingAnimationFrame(x, y, 2, 53)
-        Tile.resumeBuildingAnimation(x, y, 53, 0)
-        Tile.setBuildingAnimationFrame(x, y, 2, 54)
-        Tile.resumeBuildingAnimation(x, y, 54, 0)
-        Tile.setBuildingAnimationFrame(x, y, 2, 55)
-        Tile.resumeBuildingAnimation(x, y, 55, 0)
-        Tile.setBuildingAnimationFrame(x, y, 2, 56)
-        Tile.resumeBuildingAnimation(x, y, 56, 0)
-    elseif settings.placeHedges == 2 then
-        Tile.setBuildingAnimationFrame(x, y, 1, 53)
-        Tile.resumeBuildingAnimation(x, y, 53, 0)
-        Tile.setBuildingAnimationFrame(x, y, 1, 54)
-        Tile.resumeBuildingAnimation(x, y, 54, 0)
-        Tile.setBuildingAnimationFrame(x, y, 1, 55)
-        Tile.resumeBuildingAnimation(x, y, 55, 0)
-        Tile.setBuildingAnimationFrame(x, y, 1, 56)
-        Tile.resumeBuildingAnimation(x, y, 56, 0)
-    elseif settings.placeHedges == 3 then
+    if settings.placeFences == 1 then
+        Tile.setBuildingAnimationFrame(x, y, 2, 1)
+        Tile.resumeBuildingAnimation(x, y, 1, 0)
+        Tile.setBuildingAnimationFrame(x, y, 2, 2)
+        Tile.resumeBuildingAnimation(x, y, 2, 0)
+        Tile.setBuildingAnimationFrame(x, y, 2, 3)
+        Tile.resumeBuildingAnimation(x, y, 3, 0)
+        Tile.setBuildingAnimationFrame(x, y, 2, 4)
+        Tile.resumeBuildingAnimation(x, y, 4, 0)
+        
+        Tile.setBuildingAnimationFrame(x, y, 2, 57)
+        Tile.resumeBuildingAnimation(x, y, 57, 0)
+        Tile.setBuildingAnimationFrame(x, y, 2, 58)
+        Tile.resumeBuildingAnimation(x, y, 58, 0)
+        Tile.setBuildingAnimationFrame(x, y, 2, 59)
+        Tile.resumeBuildingAnimation(x, y, 59, 0)
+        Tile.setBuildingAnimationFrame(x, y, 2, 60)
+        Tile.resumeBuildingAnimation(x, y, 60, 0)
+    elseif settings.placeFences == 2 then
+        Tile.setBuildingAnimationFrame(x, y, 1, 1)
+        Tile.resumeBuildingAnimation(x, y, 1, 0)
+        Tile.setBuildingAnimationFrame(x, y, 1, 2)
+        Tile.resumeBuildingAnimation(x, y, 2, 0)
+        Tile.setBuildingAnimationFrame(x, y, 1, 3)
+        Tile.resumeBuildingAnimation(x, y, 3, 0)
+        Tile.setBuildingAnimationFrame(x, y, 1, 4)
+        Tile.resumeBuildingAnimation(x, y, 4, 0)
+        
+        Tile.setBuildingAnimationFrame(x, y, 1, 57)
+        Tile.resumeBuildingAnimation(x, y, 57, 0)
+        Tile.setBuildingAnimationFrame(x, y, 1, 58)
+        Tile.resumeBuildingAnimation(x, y, 58, 0)
+        Tile.setBuildingAnimationFrame(x, y, 1, 59)
+        Tile.resumeBuildingAnimation(x, y, 59, 0)
+        Tile.setBuildingAnimationFrame(x, y, 1, 60)
+        Tile.resumeBuildingAnimation(x, y, 60, 0)
+    elseif settings.placeFences == 3 then
         if math.random(1, 2) == 1 then
-            Tile.setBuildingAnimationFrame(x, y, 2, 53)
-            Tile.resumeBuildingAnimation(x, y, 53, 0)
-            Tile.setBuildingAnimationFrame(x, y, 2, 54)
-            Tile.resumeBuildingAnimation(x, y, 54, 0)
-            Tile.setBuildingAnimationFrame(x, y, 2, 55)
-            Tile.resumeBuildingAnimation(x, y, 55, 0)
-            Tile.setBuildingAnimationFrame(x, y, 2, 56)
-            Tile.resumeBuildingAnimation(x, y, 56, 0)
+            Tile.setBuildingAnimationFrame(x, y, 2, 1)
+            Tile.resumeBuildingAnimation(x, y, 1, 0)
+            Tile.setBuildingAnimationFrame(x, y, 2, 2)
+            Tile.resumeBuildingAnimation(x, y, 2, 0)
+            Tile.setBuildingAnimationFrame(x, y, 2, 3)
+            Tile.resumeBuildingAnimation(x, y, 3, 0)
+            Tile.setBuildingAnimationFrame(x, y, 2, 4)
+            Tile.resumeBuildingAnimation(x, y, 4, 0)
+            
+            Tile.setBuildingAnimationFrame(x, y, 2, 57)
+            Tile.resumeBuildingAnimation(x, y, 57, 0)
+            Tile.setBuildingAnimationFrame(x, y, 2, 58)
+            Tile.resumeBuildingAnimation(x, y, 58, 0)
+            Tile.setBuildingAnimationFrame(x, y, 2, 59)
+            Tile.resumeBuildingAnimation(x, y, 59, 0)
+            Tile.setBuildingAnimationFrame(x, y, 2, 60)
+            Tile.resumeBuildingAnimation(x, y, 60, 0)
         else
-            Tile.setBuildingAnimationFrame(x, y, 1, 53)
-            Tile.resumeBuildingAnimation(x, y, 53, 0)
-            Tile.setBuildingAnimationFrame(x, y, 1, 54)
-            Tile.resumeBuildingAnimation(x, y, 54, 0)
-            Tile.setBuildingAnimationFrame(x, y, 1, 55)
-            Tile.resumeBuildingAnimation(x, y, 55, 0)
-            Tile.setBuildingAnimationFrame(x, y, 1, 56)
-            Tile.resumeBuildingAnimation(x, y, 56, 0)
+            Tile.setBuildingAnimationFrame(x, y, 1, 1)
+            Tile.resumeBuildingAnimation(x, y, 1, 0)
+            Tile.setBuildingAnimationFrame(x, y, 1, 2)
+            Tile.resumeBuildingAnimation(x, y, 2, 0)
+            Tile.setBuildingAnimationFrame(x, y, 1, 3)
+            Tile.resumeBuildingAnimation(x, y, 3, 0)
+            Tile.setBuildingAnimationFrame(x, y, 1, 4)
+            Tile.resumeBuildingAnimation(x, y, 4, 0)
+            
+            Tile.setBuildingAnimationFrame(x, y, 1, 57)
+            Tile.resumeBuildingAnimation(x, y, 57, 0)
+            Tile.setBuildingAnimationFrame(x, y, 1, 58)
+            Tile.resumeBuildingAnimation(x, y, 58, 0)
+            Tile.setBuildingAnimationFrame(x, y, 1, 59)
+            Tile.resumeBuildingAnimation(x, y, 59, 0)
+            Tile.setBuildingAnimationFrame(x, y, 1, 60)
+            Tile.resumeBuildingAnimation(x, y, 60, 0)
         end
     end
 

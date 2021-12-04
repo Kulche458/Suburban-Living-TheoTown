@@ -1,5 +1,79 @@
 [
 	{
+		"id": "$kulche_2x2_fence_0_front_0",
+		"type": "animation",
+		"speed": 0,
+		"frames": [
+			{"bmp": "empty.png"},
+			{"bmp": "fence_0_2x2_front.png", "x": 0, "w": 64}
+		]
+	},
+	{
+		"id": "$kulche_2x2_fence_0_front_1",
+		"type": "animation",
+		"speed": 0,
+		"frames": [
+			{"bmp": "empty.png"},
+			{"bmp": "fence_0_2x2_front.png", "x": 64, "w": 64}
+		]
+	},
+	{
+		"id": "$kulche_2x2_fence_0_front_2",
+		"type": "animation",
+		"speed": 0,
+		"frames": [
+			{"bmp": "empty.png"},
+			{"bmp": "fence_0_2x2_front.png", "x": 128, "w": 64}
+		]
+	},
+	{
+		"id": "$kulche_2x2_fence_0_front_3",
+		"type": "animation",
+		"speed": 0,
+		"frames": [
+			{"bmp": "empty.png"},
+			{"bmp": "fence_0_2x2_front.png", "x": 192, "w": 64}
+		]
+	},
+
+	{
+		"id": "$kulche_2x2_fence_0_back_0",
+		"type": "animation",
+		"speed": 0,
+		"frames": [
+			{"bmp": "empty.png"},
+			{"bmp": "fence_0_2x2_back.png", "x": 0, "w": 64}
+		]
+	},
+	{
+		"id": "$kulche_2x2_fence_0_back_1",
+		"type": "animation",
+		"speed": 0,
+		"frames": [
+			{"bmp": "empty.png"},
+			{"bmp": "fence_0_2x2_back.png", "x": 64, "w": 64}
+		]
+	},
+	{
+		"id": "$kulche_2x2_fence_0_back_2",
+		"type": "animation",
+		"speed": 0,
+		"frames": [
+			{"bmp": "empty.png"},
+			{"bmp": "fence_0_2x2_back.png", "x": 128, "w": 64}
+		]
+	},
+	{
+		"id": "$kulche_2x2_fence_0_back_3",
+		"type": "animation",
+		"speed": 0,
+		"frames": [
+			{"bmp": "empty.png"},
+			{"bmp": "fence_0_2x2_back.png", "x": 192, "w": 64}
+		]
+	},
+
+	{
 		"id": "$kulche_suburbanroad00",
 		"ordinal": 1,
 		"type": "road",
@@ -2150,6 +2224,16 @@
 		"people": 9,
 		"animation night light probability":0.45,
 		"animation":[
+
+				//fence 0 back
+
+			{"id": "$kulche_2x2_fence_0_back_0", "x": 0, "y": -19, "frame": 0},
+			{"id": "$kulche_2x2_fence_0_back_1", "x": 0, "y": -19, "frame": 1},
+			{"id": "$kulche_2x2_fence_0_back_2", "x": 0, "y": -19, "frame": 2},
+			{"id": "$kulche_2x2_fence_0_back_3", "x": 0, "y": -19, "frame": 3},
+
+				//walls
+
 			{"id": "$kulche_2x2_00_walls_0", "x": 0, "y": -16, "frame": 0, "color": "$kulche_color_white"},
 			{"id": "$kulche_2x2_00_walls_1", "x": 0, "y": -16, "frame": 1, "color": "$kulche_color_white"},
 			{"id": "$kulche_2x2_00_walls_2", "x": 0, "y": -16, "frame": 2, "color": "$kulche_color_white"},
@@ -2221,12 +2305,12 @@
 			{"id": "$kulche_2x2_00_winter_2", "x": 0, "y": -23, "frame": 2, "in winter": true},			
 			{"id": "$kulche_2x2_00_winter_3", "x": 0, "y": -23, "frame": 3, "in winter": true},
 
-				//hedge
+				//fence 0 front
 
-			{"id": "$kulche_2x2_00_hedge_0", "x": 0, "y": -19, "frame": 0},
-			{"id": "$kulche_2x2_00_hedge_1", "x": 0, "y": -19, "frame": 1},
-			{"id": "$kulche_2x2_00_hedge_2", "x": 0, "y": -19, "frame": 2},
-			{"id": "$kulche_2x2_00_hedge_3", "x": 0, "y": -19, "frame": 3},
+			{"id": "$kulche_2x2_fence_0_front_0", "x": 0, "y": -19, "frame": 0},
+			{"id": "$kulche_2x2_fence_0_front_1", "x": 0, "y": -19, "frame": 1},
+			{"id": "$kulche_2x2_fence_0_front_2", "x": 0, "y": -19, "frame": 2},
+			{"id": "$kulche_2x2_fence_0_front_3", "x": 0, "y": -19, "frame": 3},
 
 				//night anim
 
