@@ -191,42 +191,6 @@
 		]
 	},
 	{
-		"id": "$kulche_2x2_00_hedge_0",
-		"type": "animation",
-		"speed": 0,
-		"frames": [
-			{"bmp": "empty.png"},
-			{"bmp": "2x2_0_hedge.png", "x": 0, "w": 64}
-		]
-	},
-	{
-		"id": "$kulche_2x2_00_hedge_1",
-		"type": "animation",
-		"speed": 0,
-		"frames": [
-			{"bmp": "empty.png"},
-			{"bmp": "2x2_0_hedge.png", "x": 64, "w": 64}
-		]
-	},
-	{
-		"id": "$kulche_2x2_00_hedge_2",
-		"type": "animation",
-		"speed": 0,
-		"frames": [
-			{"bmp": "empty.png"},
-			{"bmp": "2x2_0_hedge.png", "x": 128, "w": 64}
-		]
-	},
-	{
-		"id": "$kulche_2x2_00_hedge_3",
-		"type": "animation",
-		"speed": 0,
-		"frames": [
-			{"bmp": "empty.png"},
-			{"bmp": "2x2_0_hedge.png", "x": 192, "w": 64}
-		]
-	},
-	{
 		"id": "$kulche_2x2_00_details_0",
 		"type": "animation",
 		"speed": 0,
