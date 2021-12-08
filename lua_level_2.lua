@@ -91,7 +91,7 @@ local function colors(x, y)
 
     -- hedges
 
-    if settings.placeFences == 1 then
+    if settings.placeHedges == 1 then
         Tile.setBuildingAnimationFrame(x, y, 2, 1)
         Tile.resumeBuildingAnimation(x, y, 1, 0)
         Tile.setBuildingAnimationFrame(x, y, 2, 2)
@@ -109,7 +109,7 @@ local function colors(x, y)
         Tile.resumeBuildingAnimation(x, y, 59, 0)
         Tile.setBuildingAnimationFrame(x, y, 2, 60)
         Tile.resumeBuildingAnimation(x, y, 60, 0)
-    elseif settings.placeFences == 2 then
+    elseif settings.placeHedges == 2 then
         Tile.setBuildingAnimationFrame(x, y, 1, 1)
         Tile.resumeBuildingAnimation(x, y, 1, 0)
         Tile.setBuildingAnimationFrame(x, y, 1, 2)
@@ -127,7 +127,7 @@ local function colors(x, y)
         Tile.resumeBuildingAnimation(x, y, 59, 0)
         Tile.setBuildingAnimationFrame(x, y, 1, 60)
         Tile.resumeBuildingAnimation(x, y, 60, 0)
-    elseif settings.placeFences == 3 then
+    elseif settings.placeHedges == 3 then
         if math.random(1, 2) == 1 then
             Tile.setBuildingAnimationFrame(x, y, 2, 1)
             Tile.resumeBuildingAnimation(x, y, 1, 0)

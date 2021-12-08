@@ -3,7 +3,7 @@ local road
 
 function script:init()
     settings = Util.optStorage(TheoTown.getStorage(), self:getDraft():getId()..':settings')
-    settings.placeFences = settings.placeFences or 3
+    settings.placeHedges = settings.placeHedges or 3
     settings.alignToRoad = settings.alignToRoad or 2
     settings.showSuburbanRoad = settings.showSuburbanRoad or 2
     road = Draft.getDraft('$kulche_suburbanroad00')
@@ -12,11 +12,11 @@ end
 function script:settings()
     return {
         {
-            name = 'Place fences',
-            value = settings.placeFences,
+            name = 'Place hedges',
+            value = settings.placeHedges,
             values = {1, 2, 3},
             valueNames = {'Yes', 'No', 'Random'},
-            onChange = function(newState) settings.placeFences = newState end
+            onChange = function(newState) settings.placeHedges = newState end
         },
         {
             name = 'Align to roads',
