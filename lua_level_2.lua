@@ -4,6 +4,7 @@ local buildings2x2_tt
 
 local building_1x1_00_tt
 local building_1x1_01_tt
+local building_1x1_02_tt
 
 local building_2x2_00_tt
 local building_2x2_01_tt
@@ -13,7 +14,8 @@ math.randomseed(os.time())
 function script:init()
     buildings1x1_tt = Array{
         Draft.getDraft('$kulche_suburbs_1x1_00_tt'),
-        Draft.getDraft('$kulche_suburbs_1x1_01_tt')
+        Draft.getDraft('$kulche_suburbs_1x1_01_tt'),
+        Draft.getDraft('$kulche_suburbs_1x1_02_tt')
     }
     buildings2x2_tt = Array{
         Draft.getDraft('$kulche_suburbs_2x2_00_tt'),
@@ -21,12 +23,13 @@ function script:init()
     }
     building_1x1_00_tt = Draft.getDraft('$kulche_suburbs_1x1_00_tt')
     building_1x1_01_tt = Draft.getDraft('$kulche_suburbs_1x1_01_tt')
+    building_1x1_02_tt = Draft.getDraft('$kulche_suburbs_1x1_02_tt')
     
     building_2x2_00_tt = Draft.getDraft('$kulche_suburbs_2x2_00_tt')
     building_2x2_01_tt = Draft.getDraft('$kulche_suburbs_2x2_01_tt')
 end
 
-local function colors(x, y)
+local function colors_tt(x, y)
     -- choose random wall color from 7 provided
     for i = 5, 49 do
         Tile.setBuildingAnimationFrame(x, y, 1, i)
@@ -171,7 +174,7 @@ local function colors(x, y)
     
     if settings.alignToRoad == 1 then
 
-        if buildings1x1:contains(Tile.getBuildingDraft(x, y)) then
+        if buildings1x1_tt:contains(Tile.getBuildingDraft(x, y)) then
 
             if Tile.isRoad(x, y - 1) then
                 Tile.setBuildingFrame(x, y, 0)
@@ -183,7 +186,7 @@ local function colors(x, y)
                 Tile.setBuildingFrame(x, y, 3)
             end
         
-        elseif buildings2x2:contains(Tile.getBuildingDraft(x, y)) then
+        elseif buildings2x2_tt:contains(Tile.getBuildingDraft(x, y)) then
 
             if Tile.isRoad(x, y - 1) and Tile.isRoad(x + 1, y - 1) then
                 Tile.setBuildingFrame(x, y, 0)
