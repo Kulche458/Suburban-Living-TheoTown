@@ -176,6 +176,9 @@
 		"frames":[
 			{"bmp": "park_0.png", "w": 64, "count": 4}
 		],
+		"frames winter":[
+			{"bmp": "park_0_winter.png", "w": 64, "count": 4}
+		],
 		"price": 0,
 		"monthly price": 0,
 		"power": -2,
