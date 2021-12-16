@@ -167,6 +167,25 @@
 		"flag lkw": true
 	},
 	{
+		"id": "$kulche_suburbanroad01",
+		"ordinal": 1,
+		"type": "road",
+		"level": 1,
+		"speed": 1.1,
+		"frames": [
+			{"bmp": "road_rich.png", "w": 32, "h": 16, "count": 16}
+		],
+		"frames winter": [
+			{"bmp": "road_winter.png", "w": 32, "h": 16, "count": 16}
+		],
+		"price": 125, //to be adjusted
+		"monthly price": 2, //same
+		"title": "Suburban road",
+		"text": "It's a bit more upscale than other roads. Does not support bridges or tunnels. Heavy vehicles are forbidden from using this road. Exquisite sidewalk included!",
+		"flag normal": false,
+		"flag lkw": true
+	},
+	{
 		"id": "$kulche_suburbanpark00",
 		"type": "park",
 		"ordinal": 5,
