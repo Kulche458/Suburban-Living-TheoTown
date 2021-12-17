@@ -159,6 +159,9 @@
 		"frames winter": [
 			{"bmp": "road_winter.png", "w": 32, "h": 16, "count": 16}
 		],
+		"slope frames": [
+			{"bmp": "road_slope.png", "w": 32, "h": 32, "count": 4}
+		],
 		"price": 75, //to be adjusted
 		"monthly price": 1, //same
 		"title": "Suburban road",
