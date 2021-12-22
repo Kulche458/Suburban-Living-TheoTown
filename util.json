@@ -179,7 +179,10 @@
 			{"bmp": "road_rich.png", "w": 32, "h": 16, "count": 16}
 		],
 		"frames winter": [
-			{"bmp": "road_winter.png", "w": 32, "h": 16, "count": 16}
+			{"bmp": "road_rich_winter.png", "w": 32, "h": 16, "count": 16}
+		],
+		"slope frames": [
+			{"bmp": "road_rich_slope.png", "w": 32, "h": 32, "count": 4}
 		],
 		"price": 125, //to be adjusted
 		"monthly price": 2, //same
