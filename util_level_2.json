@@ -826,11 +826,11 @@
 		],
 		"rotation aware": true,
 		"level": 2,
-		"power": -2,
-		"water": -2,
+		"power": -4,
+		"water": -4,
 		"script": "lua_level_2.lua",
 		"zone": "$kulche_suburbanzone00",
-		"people": 9,
+		"people": 11,
 		"animation night light probability":0.45,
 		"animation":[
 
@@ -1001,11 +1001,11 @@
 		],
 		"rotation aware": true,
 		"level": 2,
-		"power": -2,
-		"water": -2,
+		"power": -4,
+		"water": -4,
 		"script": "lua_level_2.lua",
 		"zone": "$kulche_suburbanzone00",
-		"people": 9,
+		"people": 11,
 		"animation night light probability":0.45,
 		"animation":[
 
@@ -1113,11 +1113,11 @@
 		],
 		"rotation aware": true,
 		"level": 2,
-		"power": -2,
-		"water": -2,
+		"power": -4,
+		"water": -4,
 		"script": "lua_level_2.lua",
 		"zone": "$kulche_suburbanzone00",
-		"people": 9,
+		"people": 11,
 		"animation night light probability":0.45,
 		"animation":[
 
@@ -1282,11 +1282,11 @@
 		],
 		"rotation aware": true,
 		"level": 2,
-		"power": -2,
-		"water": -2,
+		"power": -3,
+		"water": -3,
 		"script": "lua_level_2.lua",
 		"zone": "$kulche_suburbanzone00",
-		"people": 9,
+		"people": 10,
 		"animation night light probability":0.45,
 		"animation":[
 
@@ -1444,11 +1444,11 @@
 		],
 		"rotation aware": true,
 		"level": 2,
-		"power": -2,
-		"water": -2,
+		"power": -3,
+		"water": -3,
 		"script": "lua_level_2.lua",
 		"zone": "$kulche_suburbanzone00",
-		"people": 9,
+		"people": 10,
 		"animation night light probability":0.45,
 		"animation":[
 
@@ -1614,11 +1614,11 @@
 		],
 		"rotation aware": true,
 		"level": 2,
-		"power": -2,
-		"water": -2,
+		"power": -3,
+		"water": -3,
 		"script": "lua_level_2.lua",
 		"zone": "$kulche_suburbanzone00",
-		"people": 9,
+		"people": 10,
 		"animation night light probability":0.45,
 		"animation":[
 

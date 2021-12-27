@@ -48,6 +48,34 @@
 		"g":110,
 		"b":160			
 	},
+	{
+		"id":"$kulche_color_olive",
+		"type":"color",
+		"r":175,
+		"g":190,
+		"b":135			
+	},
+	{
+		"id":"$kulche_color_cyan",
+		"type":"color",
+		"r":135,
+		"g":150,
+		"b":165			
+	},
+	{
+		"id":"$kulche_color_copper",
+		"type":"color",
+		"r":205,
+		"g":135,
+		"b":105			
+	},
+	{
+		"id":"$kulche_color_lavender",
+		"type":"color",
+		"r":180,
+		"g":140,
+		"b":150			
+	},
 
 			//roofs
 
@@ -78,5 +106,19 @@
 		"r":125,
 		"g":80,
 		"b":60			
+	},
+	{
+		"id":"$kulche_color_roof_4",
+		"type":"color",
+		"r":80,
+		"g":80,
+		"b":90			
+	},
+	{
+		"id":"$kulche_color_roof_5",
+		"type":"color",
+		"r":105,
+		"g":105,
+		"b":105			
 	}
 ]
