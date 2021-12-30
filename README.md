@@ -2,7 +2,6 @@
 
 to do, now:
 
-  - night frames
   - population/utilities adjustment
 
 to do, later:
