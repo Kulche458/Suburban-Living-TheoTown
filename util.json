@@ -165,8 +165,13 @@
 		"slope frames winter": [
 			{"bmp": "road_slope_winter.png", "w": 32, "h": 32, "count": 4}
 		],
+		"bridge frames": [
+			{"bmp": "road_bridge.png", "w": 32, "h": 48, "count": 12}
+		],
 		"price": 75, //to be adjusted
+		"bridge price": 150,
 		"monthly price": 1, //same
+		"bridge height": 12,
 		"title": "Suburban road",
 		"text": "A simple, cheap asphalt road. Does not support bridges or tunnels. Slightly slower than the country road. Heavy vehicles are forbidden from using this road.",
 		"flag normal": false,
