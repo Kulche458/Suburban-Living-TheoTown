@@ -195,8 +195,13 @@
 		"slope frames winter": [
 			{"bmp": "road_rich_slope_winter.png", "w": 32, "h": 32, "count": 4}
 		],
+		"bridge frames": [
+			{"bmp": "road_rich_bridge.png", "w": 32, "h": 48, "count": 12}
+		],
 		"price": 125, //to be adjusted
+		"bridge price": 350,
 		"monthly price": 2, //same
+		"bridge height": 12,
 		"title": "Suburban road",
 		"text": "It's a bit more upscale than other roads. Does not support bridges or tunnels. Heavy vehicles are forbidden from using this road. Exquisite sidewalk included!",
 		"flag normal": false,
