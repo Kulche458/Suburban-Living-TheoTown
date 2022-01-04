@@ -149,7 +149,7 @@
 
 	{
 		"id": "$kulche_suburbanroad00",
-		"ordinal": 1,
+		"ordinal": 2,
 		"type": "road",
 		"level": 1,
 		"speed": 0.9,
@@ -168,9 +168,9 @@
 		"bridge frames": [
 			{"bmp": "road_bridge.png", "w": 32, "h": 48, "count": 12}
 		],
-		"price": 75, //to be adjusted
+		"price": 100,
 		"bridge price": 150,
-		"monthly price": 1, //same
+		"monthly price": 2,
 		"bridge height": 12,
 		"title": "Suburban road",
 		"text": "A simple, cheap asphalt road. Supports only low bridges and no tunnels. Slightly slower than the country road. Heavy vehicles are prohibited from using this road.",
@@ -179,7 +179,7 @@
 	},
 	{
 		"id": "$kulche_suburbanroad01",
-		"ordinal": 1,
+		"ordinal": 4,
 		"type": "road",
 		"level": 1,
 		"speed": 1.1,
@@ -198,14 +198,20 @@
 		"bridge frames": [
 			{"bmp": "road_rich_bridge.png", "w": 32, "h": 48, "count": 12}
 		],
-		"price": 125, //to be adjusted
+		"price": 150,
 		"bridge price": 350,
-		"monthly price": 2, //same
+		"monthly price": 3,
 		"bridge height": 12,
 		"title": "Suburban road",
 		"text": "It's a bit more upscale than other roads. Supports only low bridges and no tunnels. Heavy vehicles are prohibited from using this road. Exquisite sidewalk included!",
 		"flag normal": false,
-		"flag lkw": true
+		"flag lkw": true,
+		"requirements":[
+			{
+			  "type": "RANK",
+			  "lvl": 4
+			}
+		]
 	},
 	{
 		"id": "$kulche_suburbanpark00",
@@ -220,13 +226,19 @@
 		"frames winter":[
 			{"bmp": "park_0_winter.png", "w": 64, "count": 4}
 		],
-		"price": 0,
-		"monthly price": 0,
+		"price": 1800,
+		"monthly price": 2,
 		"power": -2,
 		"water": 0,
 		"influence park": 10,
 		"title": "Small park",
-		"text": "It's a small corner park, for a small town."
+		"text": "It's a small corner park, for a small town.",
+		"requirements":[
+			{
+			  "type": "RANK",
+			  "lvl": 2
+			}
+		]
 	},
 	{
 		"id": "$kulche_suburbs_settings00",
@@ -379,7 +391,8 @@
 		"rci": true,
 		"base": "$zoneresidential",
 		"title": "Suburban Zone",
-		"text": "Small residential houses will be built here.",
+		"text": "Small residential houses will be built here.\nNot influenced by inflation as much as other zones.",
+		"price factor": 0.0015,
 		"frames": [
 			{"bmp": "zone.png"}
 		],
