@@ -1,11 +1,8 @@
 # Suburban-Living-TheoTown
 
-to do, now:
-
-  - population/utilities adjustment
-
-to do, later:
+planned features:
   
+  - manifest (pretty urgent)
   - new variants (1x1, 2x2, perhaps 3x3)
   - level ttt houses - preferably color-variated
   - more decoration buildings
@@ -14,4 +11,4 @@ to do, later:
 
 (unprioritised)
 
-**Latest release: preview version v0.4**
+**Latest release:  version v1**
