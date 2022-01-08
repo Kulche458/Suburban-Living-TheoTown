@@ -1,8 +1,7 @@
 # Suburban-Living-TheoTown
 
 planned features:
-  
-  - manifest (pretty urgent)
+
   - new variants (1x1, 2x2, perhaps 3x3)
   - level ttt houses - preferably color-variated
   - more decoration buildings
