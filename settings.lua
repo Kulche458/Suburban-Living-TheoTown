@@ -7,6 +7,7 @@ function script:init()
     settings.alignToRoad = settings.alignToRoad or 2
     settings.showSuburbanRoad = settings.showSuburbanRoad or 2
     road = Draft.getDraft('$kulche_suburbanroad00')
+    road_rich = Draft.getDraft('$kulche_suburbanroad01')
 end
 
 function script:settings()
@@ -38,7 +39,9 @@ end
 function script:enterCity()
     if settings.showSuburbanRoad == 1 then
         road:setVisible(true)
+        road_rich:setVisible(true)
     elseif settings.showSuburbanRoad == 2 then
         road:setVisible(false)
+        road_rich:setVisible(false)
     end
 end
