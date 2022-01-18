@@ -48,43 +48,17 @@ local function colors_tt(x, y)
     end
 
     local walls_color = math.random(1, 11)
-    if walls_color == 1 then
-        walls_animation = 5 -- set first animation index to 5
-    elseif walls_color == 2 then
-        walls_animation = 9 -- set first animation index to 9
-    elseif walls_color == 3 then
-        walls_animation = 13 -- set first animation index to 13
-    elseif walls_color == 4 then
-        walls_animation = 17 -- set first animation index to 17
-    elseif walls_color == 5 then
-        walls_animation = 21 -- set first animation index to 21
-    elseif walls_color == 6 then
-        walls_animation = 25 -- set first animation index to 25
-    elseif walls_color == 7 then
-        walls_animation = 29 -- set first animation index to 29
-    elseif walls_color == 8 then
-        walls_animation = 33 -- set first animation index to 33
-    elseif walls_color == 9 then
-        walls_animation = 37 -- set first animation index to 37
-    elseif walls_color == 10 then
-        walls_animation = 41 -- set first animation index to 41
-    elseif walls_color == 11 then
-        walls_animation = 45 -- set first animation index to 45
+    for i=1,11 do
+        if i = walls_color then
+            walls_animation == i * 4 + 1
+        end
     end
     
     local roof_color = math.random(1, 6)
-    if roof_color == 1 then
-        roof_animation = 49
-    elseif roof_color == 2 then
-        roof_animation = 53
-    elseif roof_color == 3 then
-        roof_animation = 57
-    elseif roof_color == 4 then
-        roof_animation = 61
-    elseif roof_color == 5 then
-        roof_animation = 65
-    elseif roof_color == 6 then
-        roof_animation = 69
+    for j=1,6 do
+        if j = roof_color then
+            roof_animation == j * 4 + 45
+        end
     end
 
     Tile.setBuildingAnimationFrame(x, y, 2, walls_animation)
