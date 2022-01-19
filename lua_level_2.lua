@@ -61,25 +61,12 @@ local function colors_tt(x, y)
         end
     end
 
-    Tile.setBuildingAnimationFrame(x, y, 2, walls_animation)
-    Tile.resumeBuildingAnimation(x, y, walls_animation, 0) -- play animation with index n
-    Tile.setBuildingAnimationFrame(x, y, 2, walls_animation+1)
-    Tile.resumeBuildingAnimation(x, y, walls_animation+1, 0)-- play animation with index n + 1
-    Tile.setBuildingAnimationFrame(x, y, 2, walls_animation+2)
-    Tile.resumeBuildingAnimation(x, y, walls_animation+2, 0)-- play animation with index n + 2
-    Tile.setBuildingAnimationFrame(x, y, 2, walls_animation+3)
-    Tile.resumeBuildingAnimation(x, y, walls_animation+3, 0)-- play animation with index n + 3
-
-    -- eg. if walls_color = 2, play animations with index 5, 6, 7, 8 (gray)
-    
-    Tile.setBuildingAnimationFrame(x, y, 2, roof_animation)
-    Tile.resumeBuildingAnimation(x, y, roof_animation, 0)
-    Tile.setBuildingAnimationFrame(x, y, 2, roof_animation+1)
-    Tile.resumeBuildingAnimation(x, y, roof_animation+1, 0)
-    Tile.setBuildingAnimationFrame(x, y, 2, roof_animation+2)
-    Tile.resumeBuildingAnimation(x, y, roof_animation+2, 0)
-    Tile.setBuildingAnimationFrame(x, y, 2, roof_animation+3)
-    Tile.resumeBuildingAnimation(x, y, roof_animation+3, 0)
+    for i=0,3 do
+        Tile.setBuildingAnimationFrame(x, y, 2, walls_animation)
+        Tile.resumeBuildingAnimation(x, y, walls_animation + i, 0)
+        Tile.setBuildingAnimationFrame(x, y, 2, roof_animation)
+        Tile.resumeBuildingAnimation(x, y, roof_animation + i, 0)
+    end
 
     -- hedges
 
