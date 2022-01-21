@@ -48,20 +48,20 @@ local function colors_tt(x, y)
     end
 
     local walls_color = math.random(1, 11)
-    for i=1,11 do
-        if i = walls_color then
-            walls_animation == i * 4 + 1
+    for i = 1, 11 do
+        if i == walls_color then
+            walls_animation = i * 4 + 1
         end
     end
     
     local roof_color = math.random(1, 6)
-    for i=1,6 do
-        if i = roof_color then
-            roof_animation == i * 4 + 45
+    for i = 1, 6 do
+        if i == roof_color then
+            roof_animation = i * 4 + 45
         end
     end
 
-    for i=0,3 do
+    for i = 0, 3 do
         Tile.setBuildingAnimationFrame(x, y, 2, walls_animation)
         Tile.resumeBuildingAnimation(x, y, walls_animation + i, 0)
         Tile.setBuildingAnimationFrame(x, y, 2, roof_animation)
@@ -71,43 +71,43 @@ local function colors_tt(x, y)
     -- hedges
 
     if settings.placeHedges == 1 then
-        for i=1,4 do
+        for i = 1, 4 do
             Tile.setBuildingAnimationFrame(x, y, 2, i)
             Tile.resumeBuildingAnimation(x, y, i, 0)
         end
         
-        for i=81,84 do
+        for i = 81, 84 do
             Tile.setBuildingAnimationFrame(x, y, 2, i)
             Tile.resumeBuildingAnimation(x, y, i, 0)
         end
     elseif settings.placeHedges == 2 then
-        for i=1,4 do
+        for i = 1, 4 do
             Tile.setBuildingAnimationFrame(x, y, 1, i)
             Tile.resumeBuildingAnimation(x, y, i, 0)
         end
         
-        for i=81,84 do
+        for i = 81, 84 do
             Tile.setBuildingAnimationFrame(x, y, 1, i)
             Tile.resumeBuildingAnimation(x, y, i, 0)
         end
     elseif settings.placeHedges == 3 then
         if math.random(1, 2) == 1 then
-            for i=1,4 do
+            for i = 1, 4 do
                 Tile.setBuildingAnimationFrame(x, y, 2, i)
                 Tile.resumeBuildingAnimation(x, y, i, 0)
             end
             
-            for i=81,84 do
+            for i = 81, 84 do
                 Tile.setBuildingAnimationFrame(x, y, 2, i)
                 Tile.resumeBuildingAnimation(x, y, i, 0)
             end
         else
-            for i=1,4 do
+            for i = 1, 4 do
                 Tile.setBuildingAnimationFrame(x, y, 1, i)
                 Tile.resumeBuildingAnimation(x, y, i, 0)
             end
             
-            for i=81,84 do
+            for i = 81, 84 do
                 Tile.setBuildingAnimationFrame(x, y, 1, i)
                 Tile.resumeBuildingAnimation(x, y, i, 0)
             end

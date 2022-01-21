@@ -1,6 +1,6 @@
 {
   "id":"kulche_suburban_living",
-  "version":1.0
+  "version":1.0,
   "title":"Suburban Living",
   "text":"Welcome to Suburban Living v1.0\n\nThe main highlight of this plugin is a new zone - the suburban zone. It's cheaper and less demanding than the default residential zone, and only small, custom suburban buildings will be built here. It's perfect for the early game because it doesn't need large investments to place, and lower upkeep costs help with further development. However, you will need to replace those if you want to have dense and rich buildings in your city.\n\nHouses built on this zone will contain a bit less people than the default zones. They are completely random - up to a total of 1188 color and model combinations. If you provide them with parks, they will grow into bigger residences with higher population capacity. If they have education too, they can reach level 2.\n\nSuburban Living contains a few other features too - two new roads with winter frames, a 2x2 rotation aware park for small towns and a few decoration buildings placed automatically in the zone.\n\nThis plugin is still in development - expect updates, fixes and new content, but most importantly, have fun!",
   "author":"Kulche",
