@@ -168,6 +168,9 @@
 		"bridge frames": [
 			{"bmp": "road_bridge.png", "w": 32, "h": 48, "count": 12}
 		],
+		"bridge frames winter": [
+			{"bmp": "road_bridge_winter.png", "w": 32, "h": 48, "count": 12}
+		],
 		"price": 100,
 		"bridge price": 150,
 		"monthly price": 2,
