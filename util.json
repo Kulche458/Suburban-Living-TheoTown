@@ -201,6 +201,9 @@
 		"bridge frames": [
 			{"bmp": "road_rich_bridge.png", "w": 32, "h": 48, "count": 12}
 		],
+		"bridge frames winter": [
+			{"bmp": "road_rich_bridge_winter.png", "w": 32, "h": 48, "count": 12}
+		],
 		"price": 150,
 		"bridge price": 350,
 		"monthly price": 3,
