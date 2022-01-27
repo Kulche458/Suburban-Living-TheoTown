@@ -10,4 +10,4 @@ planned features:
 
 (unprioritised)
 
-**Latest release:  version v1**
+**Latest release:  version v1.1**
