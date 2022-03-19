@@ -170,45 +170,47 @@ end
     -- if conditions met: 0.5% chance every day to upgrade to it's upgraded counterpart (if in max park infl)
 
 function script:daily(x, y, level)
-    if Tile.getBuildingDaysBuilt(x, y) > 90 then
-        if math.random() < Tile.getInfluence(Tile.INFLUENCE_PARK, x, y) * 0.005 then
-            
-            if Tile.getBuildingDraft(x, y) == building_2x2_00 then
-                Builder.remove(x, y)
-                Builder.buildBuilding(building_2x2_00_UPG, x, y)
-            end
-            
-            if Tile.getBuildingDraft(x, y) == building_2x2_01 then
-                Builder.remove(x, y)
-                Builder.buildBuilding(building_2x2_01_UPG, x, y)
-            end
-            
-            if Tile.getBuildingDraft(x, y) == building_2x2_02 then
-                Builder.remove(x, y)
-                Builder.buildBuilding(building_2x2_02_UPG, x, y)
-            end
+    if not Tile.isBuildingUntouchable(x, y) then
+        if Tile.getBuildingDaysBuilt(x, y) > 90 then
+            if math.random() < Tile.getInfluence(Tile.INFLUENCE_PARK, x, y) * 0.005 then
+                
+                if Tile.getBuildingDraft(x, y) == building_2x2_00 then
+                    Builder.remove(x, y)
+                    Builder.buildBuilding(building_2x2_00_UPG, x, y)
+                end
+                
+                if Tile.getBuildingDraft(x, y) == building_2x2_01 then
+                    Builder.remove(x, y)
+                    Builder.buildBuilding(building_2x2_01_UPG, x, y)
+                end
+                
+                if Tile.getBuildingDraft(x, y) == building_2x2_02 then
+                    Builder.remove(x, y)
+                    Builder.buildBuilding(building_2x2_02_UPG, x, y)
+                end
 
+            end
         end
-    end
 
-    if Tile.getBuildingDaysBuilt(x, y) > 180 then
-        if math.random() < Tile.getInfluence(Tile.INFLUENCE_PARK, x, y) * 0.005 then
+        if Tile.getBuildingDaysBuilt(x, y) > 180 then
+            if math.random() < Tile.getInfluence(Tile.INFLUENCE_PARK, x, y) * 0.005 then
 
-            if Tile.getBuildingDraft(x, y) == building_1x1_00 then
-                Builder.remove(x, y)
-                Builder.buildBuilding(building_1x1_00_UPG, x, y)
-            end
-            
-            if Tile.getBuildingDraft(x, y) == building_1x1_01 then
-                Builder.remove(x, y)
-                Builder.buildBuilding(building_1x1_01_UPG, x, y)
-            end
-            
-            if Tile.getBuildingDraft(x, y) == building_1x1_02 then
-                Builder.remove(x, y)
-                Builder.buildBuilding(building_1x1_02_UPG, x, y)
-            end
+                if Tile.getBuildingDraft(x, y) == building_1x1_00 then
+                    Builder.remove(x, y)
+                    Builder.buildBuilding(building_1x1_00_UPG, x, y)
+                end
+                
+                if Tile.getBuildingDraft(x, y) == building_1x1_01 then
+                    Builder.remove(x, y)
+                    Builder.buildBuilding(building_1x1_01_UPG, x, y)
+                end
+                
+                if Tile.getBuildingDraft(x, y) == building_1x1_02 then
+                    Builder.remove(x, y)
+                    Builder.buildBuilding(building_1x1_02_UPG, x, y)
+                end
 
+            end
         end
     end
 end
