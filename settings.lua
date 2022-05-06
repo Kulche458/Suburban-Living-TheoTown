@@ -35,7 +35,7 @@ function script:settings()
             onChange = function(newState) settings.showSuburbanRoad = newState end
         },
         {
-            name = 'Building color distribution',
+            name = 'Building color distribution bias',
             value = settings.colorDistribution,
             values = {1, 2, 3, 4},
             valueNames = {'No bias', 'Common', 'Colorful', 'Toned'},

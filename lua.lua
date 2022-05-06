@@ -1,20 +1,8 @@
 
 local buildings1x1
 local buildings2x2
-
-local building_1x1_00
-local building_1x1_00_UPG
-local building_1x1_01
-local building_1x1_01_UPG
-local building_1x1_02
-local building_1x1_02_UPG
-
-local building_2x2_00
-local building_2x2_00_UPG
-local building_2x2_01
-local building_2x2_01_UPG
-local building_2x2_02
-local building_2x2_02_UPG
+local buildings1x1_tt
+local buildings2x2_tt
 
 local color_count_wall = 14
 local color_count_roof = 6
@@ -45,19 +33,16 @@ function script:init()
         Draft.getDraft('$kulche_suburbs_2x2_01_UPG'),
         Draft.getDraft('$kulche_suburbs_2x2_02_UPG')
     }
-    building_1x1_00 = Draft.getDraft('$kulche_suburbs_1x1_00')
-    building_1x1_00_UPG = Draft.getDraft('$kulche_suburbs_1x1_00_UPG')
-    building_1x1_01 = Draft.getDraft('$kulche_suburbs_1x1_01')
-    building_1x1_01_UPG = Draft.getDraft('$kulche_suburbs_1x1_01_UPG')
-    building_1x1_02 = Draft.getDraft('$kulche_suburbs_1x1_02')
-    building_1x1_02_UPG = Draft.getDraft('$kulche_suburbs_1x1_02_UPG')
-    
-    building_2x2_00 = Draft.getDraft('$kulche_suburbs_2x2_00')
-    building_2x2_00_UPG = Draft.getDraft('$kulche_suburbs_2x2_00_UPG')
-    building_2x2_01 = Draft.getDraft('$kulche_suburbs_2x2_01')
-    building_2x2_01_UPG = Draft.getDraft('$kulche_suburbs_2x2_01_UPG')
-    building_2x2_02 = Draft.getDraft('$kulche_suburbs_2x2_02')
-    building_2x2_02_UPG = Draft.getDraft('$kulche_suburbs_2x2_02_UPG')
+    buildings1x1_tt = Array{
+        Draft.getDraft('$kulche_suburbs_1x1_00_tt'),
+        Draft.getDraft('$kulche_suburbs_1x1_01_tt'),
+        Draft.getDraft('$kulche_suburbs_1x1_02_tt')
+    }
+    buildings2x2_tt = Array{
+        Draft.getDraft('$kulche_suburbs_2x2_00_tt'),
+        Draft.getDraft('$kulche_suburbs_2x2_01_tt'),
+        Draft.getDraft('$kulche_suburbs_2x2_02_tt')
+    }
 end
 
 local function colors(x, y)
@@ -192,7 +177,7 @@ local function colors(x, y)
     
     if settings.alignToRoad == 1 then
 
-        if buildings1x1:contains(Tile.getBuildingDraft(x, y)) then
+        if buildings1x1:contains(Tile.getBuildingDraft(x, y)) or buildings1x1_tt:contains(Tile.getBuildingDraft(x, y)) then
 
             if Tile.isRoad(x, y - 1) then
                 Tile.setBuildingFrame(x, y, 0)
@@ -204,7 +189,7 @@ local function colors(x, y)
                 Tile.setBuildingFrame(x, y, 3)
             end
         
-        elseif buildings2x2:contains(Tile.getBuildingDraft(x, y)) then
+        elseif buildings2x2:contains(Tile.getBuildingDraft(x, y)) or buildings2x2_tt:contains(Tile.getBuildingDraft(x, y)) then
 
             if Tile.isRoad(x, y - 1) and Tile.isRoad(x + 1, y - 1) then
                 Tile.setBuildingFrame(x, y, 0)
@@ -230,19 +215,11 @@ function script:daily(x, y, level)
         if Tile.getBuildingDaysBuilt(x, y) > 90 then
             if math.random() < Tile.getInfluence(Tile.INFLUENCE_PARK, x, y) * 0.005 then
                 
-                if Tile.getBuildingDraft(x, y) == building_2x2_00 then
+                if buildings2x2:contains(Tile.getBuildingDraft(x, y)) then
+                    local building = Tile.getBuildingDraft(x, y)
                     Builder.remove(x, y)
-                    Builder.buildBuilding(building_2x2_00_UPG, x, y)
-                end
-                
-                if Tile.getBuildingDraft(x, y) == building_2x2_01 then
-                    Builder.remove(x, y)
-                    Builder.buildBuilding(building_2x2_01_UPG, x, y)
-                end
-                
-                if Tile.getBuildingDraft(x, y) == building_2x2_02 then
-                    Builder.remove(x, y)
-                    Builder.buildBuilding(building_2x2_02_UPG, x, y)
+                    Builder.buildBuilding(building, x, y)
+                    local building = nil
                 end
 
             end
@@ -250,20 +227,12 @@ function script:daily(x, y, level)
 
         if Tile.getBuildingDaysBuilt(x, y) > 180 then
             if math.random() < Tile.getInfluence(Tile.INFLUENCE_PARK, x, y) * 0.005 then
-
-                if Tile.getBuildingDraft(x, y) == building_1x1_00 then
-                    Builder.remove(x, y)
-                    Builder.buildBuilding(building_1x1_00_UPG, x, y)
-                end
                 
-                if Tile.getBuildingDraft(x, y) == building_1x1_01 then
+                if buildings1x1:contains(Tile.getBuildingDraft(x, y)) then
+                    local building = Tile.getBuildingDraft(x, y)
                     Builder.remove(x, y)
-                    Builder.buildBuilding(building_1x1_01_UPG, x, y)
-                end
-                
-                if Tile.getBuildingDraft(x, y) == building_1x1_02 then
-                    Builder.remove(x, y)
-                    Builder.buildBuilding(building_1x1_02_UPG, x, y)
+                    Builder.buildBuilding(building, x, y)
+                    local building = nil
                 end
 
             end

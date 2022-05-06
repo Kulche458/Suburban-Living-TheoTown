@@ -828,7 +828,7 @@
 		"level": 2,
 		"power": -4,
 		"water": -4,
-		"script": "lua_level_2.lua",
+		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
 		"people": 11,
 		"animation night light probability":0.45,
@@ -897,6 +897,21 @@
 			{"id": "$kulche_2x2_00_tt_walls_1", "x": 0, "y": -18, "frame": 1, "color": "$kulche_color_lavender"},
 			{"id": "$kulche_2x2_00_tt_walls_2", "x": 0, "y": -18, "frame": 2, "color": "$kulche_color_lavender"},
 			{"id": "$kulche_2x2_00_tt_walls_3", "x": 0, "y": -18, "frame": 3, "color": "$kulche_color_lavender"},
+			
+			{"id": "$kulche_2x2_00_tt_walls_0", "x": 0, "y": -18, "frame": 0, "color": "$kulche_color_creamy"},
+			{"id": "$kulche_2x2_00_tt_walls_1", "x": 0, "y": -18, "frame": 1, "color": "$kulche_color_creamy"},
+			{"id": "$kulche_2x2_00_tt_walls_2", "x": 0, "y": -18, "frame": 2, "color": "$kulche_color_creamy"},
+			{"id": "$kulche_2x2_00_tt_walls_3", "x": 0, "y": -18, "frame": 3, "color": "$kulche_color_creamy"},
+			
+			{"id": "$kulche_2x2_00_tt_walls_0", "x": 0, "y": -18, "frame": 0, "color": "$kulche_color_mandrake"},
+			{"id": "$kulche_2x2_00_tt_walls_1", "x": 0, "y": -18, "frame": 1, "color": "$kulche_color_mandrake"},
+			{"id": "$kulche_2x2_00_tt_walls_2", "x": 0, "y": -18, "frame": 2, "color": "$kulche_color_mandrake"},
+			{"id": "$kulche_2x2_00_tt_walls_3", "x": 0, "y": -18, "frame": 3, "color": "$kulche_color_mandrake"},
+			
+			{"id": "$kulche_2x2_00_tt_walls_0", "x": 0, "y": -18, "frame": 0, "color": "$kulche_color_sandy"},
+			{"id": "$kulche_2x2_00_tt_walls_1", "x": 0, "y": -18, "frame": 1, "color": "$kulche_color_sandy"},
+			{"id": "$kulche_2x2_00_tt_walls_2", "x": 0, "y": -18, "frame": 2, "color": "$kulche_color_sandy"},
+			{"id": "$kulche_2x2_00_tt_walls_3", "x": 0, "y": -18, "frame": 3, "color": "$kulche_color_sandy"},
 
 				//roofs
 			
@@ -1033,7 +1048,7 @@
 		"level": 2,
 		"power": -4,
 		"water": -4,
-		"script": "lua_level_2.lua",
+		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
 		"people": 11,
 		"animation night light probability":0.45,
@@ -1102,6 +1117,21 @@
 			{"id": "$kulche_2x2_01_tt_walls_1", "x": 0, "y": -21, "frame": 1, "color": "$kulche_color_lavender"},
 			{"id": "$kulche_2x2_01_tt_walls_2", "x": 0, "y": -21, "frame": 2, "color": "$kulche_color_lavender"},
 			{"id": "$kulche_2x2_01_tt_walls_3", "x": 0, "y": -21, "frame": 3, "color": "$kulche_color_lavender"},
+			
+			{"id": "$kulche_2x2_01_tt_walls_0", "x": 0, "y": -21, "frame": 0, "color": "$kulche_color_creamy"},
+			{"id": "$kulche_2x2_01_tt_walls_1", "x": 0, "y": -21, "frame": 1, "color": "$kulche_color_creamy"},
+			{"id": "$kulche_2x2_01_tt_walls_2", "x": 0, "y": -21, "frame": 2, "color": "$kulche_color_creamy"},
+			{"id": "$kulche_2x2_01_tt_walls_3", "x": 0, "y": -21, "frame": 3, "color": "$kulche_color_creamy"},
+			
+			{"id": "$kulche_2x2_01_tt_walls_0", "x": 0, "y": -21, "frame": 0, "color": "$kulche_color_mandrake"},
+			{"id": "$kulche_2x2_01_tt_walls_1", "x": 0, "y": -21, "frame": 1, "color": "$kulche_color_mandrake"},
+			{"id": "$kulche_2x2_01_tt_walls_2", "x": 0, "y": -21, "frame": 2, "color": "$kulche_color_mandrake"},
+			{"id": "$kulche_2x2_01_tt_walls_3", "x": 0, "y": -21, "frame": 3, "color": "$kulche_color_mandrake"},
+			
+			{"id": "$kulche_2x2_01_tt_walls_0", "x": 0, "y": -21, "frame": 0, "color": "$kulche_color_sandy"},
+			{"id": "$kulche_2x2_01_tt_walls_1", "x": 0, "y": -21, "frame": 1, "color": "$kulche_color_sandy"},
+			{"id": "$kulche_2x2_01_tt_walls_2", "x": 0, "y": -21, "frame": 2, "color": "$kulche_color_sandy"},
+			{"id": "$kulche_2x2_01_tt_walls_3", "x": 0, "y": -21, "frame": 3, "color": "$kulche_color_sandy"},
 
 				//roofs
 			
@@ -1248,7 +1278,7 @@
 		"level": 2,
 		"power": -4,
 		"water": -4,
-		"script": "lua_level_2.lua",
+		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
 		"people": 11,
 		"animation night light probability":0.45,
@@ -1317,6 +1347,21 @@
 			{"id": "$kulche_2x2_02_tt_walls_1", "x": 0, "y": -18, "frame": 1, "color": "$kulche_color_lavender"},
 			{"id": "$kulche_2x2_02_tt_walls_2", "x": 0, "y": -18, "frame": 2, "color": "$kulche_color_lavender"},
 			{"id": "$kulche_2x2_02_tt_walls_3", "x": 0, "y": -18, "frame": 3, "color": "$kulche_color_lavender"},
+			
+			{"id": "$kulche_2x2_02_tt_walls_0", "x": 0, "y": -18, "frame": 0, "color": "$kulche_color_creamy"},
+			{"id": "$kulche_2x2_02_tt_walls_1", "x": 0, "y": -18, "frame": 1, "color": "$kulche_color_creamy"},
+			{"id": "$kulche_2x2_02_tt_walls_2", "x": 0, "y": -18, "frame": 2, "color": "$kulche_color_creamy"},
+			{"id": "$kulche_2x2_02_tt_walls_3", "x": 0, "y": -18, "frame": 3, "color": "$kulche_color_creamy"},
+			
+			{"id": "$kulche_2x2_02_tt_walls_0", "x": 0, "y": -18, "frame": 0, "color": "$kulche_color_mandrake"},
+			{"id": "$kulche_2x2_02_tt_walls_1", "x": 0, "y": -18, "frame": 1, "color": "$kulche_color_mandrake"},
+			{"id": "$kulche_2x2_02_tt_walls_2", "x": 0, "y": -18, "frame": 2, "color": "$kulche_color_mandrake"},
+			{"id": "$kulche_2x2_02_tt_walls_3", "x": 0, "y": -18, "frame": 3, "color": "$kulche_color_mandrake"},
+			
+			{"id": "$kulche_2x2_02_tt_walls_0", "x": 0, "y": -18, "frame": 0, "color": "$kulche_color_sandy"},
+			{"id": "$kulche_2x2_02_tt_walls_1", "x": 0, "y": -18, "frame": 1, "color": "$kulche_color_sandy"},
+			{"id": "$kulche_2x2_02_tt_walls_2", "x": 0, "y": -18, "frame": 2, "color": "$kulche_color_sandy"},
+			{"id": "$kulche_2x2_02_tt_walls_3", "x": 0, "y": -18, "frame": 3, "color": "$kulche_color_sandy"},
 
 				//roofs
 			
@@ -1447,7 +1492,7 @@
 		"level": 2,
 		"power": -3,
 		"water": -3,
-		"script": "lua_level_2.lua",
+		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
 		"people": 10,
 		"animation night light probability":0.45,
@@ -1516,6 +1561,21 @@
 			{"id": "$kulche_1x1_00_tt_walls_1", "x": 0, "y": -15, "frame": 1, "color": "$kulche_color_lavender"},
 			{"id": "$kulche_1x1_00_tt_walls_2", "x": 0, "y": -15, "frame": 2, "color": "$kulche_color_lavender"},
 			{"id": "$kulche_1x1_00_tt_walls_3", "x": 0, "y": -15, "frame": 3, "color": "$kulche_color_lavender"},
+			
+			{"id": "$kulche_1x1_00_tt_walls_0", "x": 0, "y": -15, "frame": 0, "color": "$kulche_color_creamy"},
+			{"id": "$kulche_1x1_00_tt_walls_1", "x": 0, "y": -15, "frame": 1, "color": "$kulche_color_creamy"},
+			{"id": "$kulche_1x1_00_tt_walls_2", "x": 0, "y": -15, "frame": 2, "color": "$kulche_color_creamy"},
+			{"id": "$kulche_1x1_00_tt_walls_3", "x": 0, "y": -15, "frame": 3, "color": "$kulche_color_creamy"},
+			
+			{"id": "$kulche_1x1_00_tt_walls_0", "x": 0, "y": -15, "frame": 0, "color": "$kulche_color_mandrake"},
+			{"id": "$kulche_1x1_00_tt_walls_1", "x": 0, "y": -15, "frame": 1, "color": "$kulche_color_mandrake"},
+			{"id": "$kulche_1x1_00_tt_walls_2", "x": 0, "y": -15, "frame": 2, "color": "$kulche_color_mandrake"},
+			{"id": "$kulche_1x1_00_tt_walls_3", "x": 0, "y": -15, "frame": 3, "color": "$kulche_color_mandrake"},
+			
+			{"id": "$kulche_1x1_00_tt_walls_0", "x": 0, "y": -15, "frame": 0, "color": "$kulche_color_sandy"},
+			{"id": "$kulche_1x1_00_tt_walls_1", "x": 0, "y": -15, "frame": 1, "color": "$kulche_color_sandy"},
+			{"id": "$kulche_1x1_00_tt_walls_2", "x": 0, "y": -15, "frame": 2, "color": "$kulche_color_sandy"},
+			{"id": "$kulche_1x1_00_tt_walls_3", "x": 0, "y": -15, "frame": 3, "color": "$kulche_color_sandy"},
 
 				//roofs
 			
@@ -1639,7 +1699,7 @@
 		"level": 2,
 		"power": -3,
 		"water": -3,
-		"script": "lua_level_2.lua",
+		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
 		"people": 10,
 		"animation night light probability":0.45,
@@ -1708,6 +1768,21 @@
 			{"id": "$kulche_1x1_01_tt_walls_1", "x": 0, "y": -15, "frame": 1, "color": "$kulche_color_lavender"},
 			{"id": "$kulche_1x1_01_tt_walls_2", "x": 0, "y": -15, "frame": 2, "color": "$kulche_color_lavender"},
 			{"id": "$kulche_1x1_01_tt_walls_3", "x": 0, "y": -15, "frame": 3, "color": "$kulche_color_lavender"},
+			
+			{"id": "$kulche_1x1_01_tt_walls_0", "x": 0, "y": -15, "frame": 0, "color": "$kulche_color_creamy"},
+			{"id": "$kulche_1x1_01_tt_walls_1", "x": 0, "y": -15, "frame": 1, "color": "$kulche_color_creamy"},
+			{"id": "$kulche_1x1_01_tt_walls_2", "x": 0, "y": -15, "frame": 2, "color": "$kulche_color_creamy"},
+			{"id": "$kulche_1x1_01_tt_walls_3", "x": 0, "y": -15, "frame": 3, "color": "$kulche_color_creamy"},
+			
+			{"id": "$kulche_1x1_01_tt_walls_0", "x": 0, "y": -15, "frame": 0, "color": "$kulche_color_mandrake"},
+			{"id": "$kulche_1x1_01_tt_walls_1", "x": 0, "y": -15, "frame": 1, "color": "$kulche_color_mandrake"},
+			{"id": "$kulche_1x1_01_tt_walls_2", "x": 0, "y": -15, "frame": 2, "color": "$kulche_color_mandrake"},
+			{"id": "$kulche_1x1_01_tt_walls_3", "x": 0, "y": -15, "frame": 3, "color": "$kulche_color_mandrake"},
+			
+			{"id": "$kulche_1x1_01_tt_walls_0", "x": 0, "y": -15, "frame": 0, "color": "$kulche_color_sandy"},
+			{"id": "$kulche_1x1_01_tt_walls_1", "x": 0, "y": -15, "frame": 1, "color": "$kulche_color_sandy"},
+			{"id": "$kulche_1x1_01_tt_walls_2", "x": 0, "y": -15, "frame": 2, "color": "$kulche_color_sandy"},
+			{"id": "$kulche_1x1_01_tt_walls_3", "x": 0, "y": -15, "frame": 3, "color": "$kulche_color_sandy"},
 
 				//roofs
 			
@@ -1839,7 +1914,7 @@
 		"level": 2,
 		"power": -3,
 		"water": -3,
-		"script": "lua_level_2.lua",
+		"script": "lua.lua",
 		"zone": "$kulche_suburbanzone00",
 		"people": 10,
 		"animation night light probability":0.45,
@@ -1908,6 +1983,21 @@
 			{"id": "$kulche_1x1_02_tt_walls_1", "x": 0, "y": -15, "frame": 1, "color": "$kulche_color_lavender"},
 			{"id": "$kulche_1x1_02_tt_walls_2", "x": 0, "y": -15, "frame": 2, "color": "$kulche_color_lavender"},
 			{"id": "$kulche_1x1_02_tt_walls_3", "x": 0, "y": -15, "frame": 3, "color": "$kulche_color_lavender"},
+			
+			{"id": "$kulche_1x1_02_tt_walls_0", "x": 0, "y": -15, "frame": 0, "color": "$kulche_color_creamy"},
+			{"id": "$kulche_1x1_02_tt_walls_1", "x": 0, "y": -15, "frame": 1, "color": "$kulche_color_creamy"},
+			{"id": "$kulche_1x1_02_tt_walls_2", "x": 0, "y": -15, "frame": 2, "color": "$kulche_color_creamy"},
+			{"id": "$kulche_1x1_02_tt_walls_3", "x": 0, "y": -15, "frame": 3, "color": "$kulche_color_creamy"},
+			
+			{"id": "$kulche_1x1_02_tt_walls_0", "x": 0, "y": -15, "frame": 0, "color": "$kulche_color_mandrake"},
+			{"id": "$kulche_1x1_02_tt_walls_1", "x": 0, "y": -15, "frame": 1, "color": "$kulche_color_mandrake"},
+			{"id": "$kulche_1x1_02_tt_walls_2", "x": 0, "y": -15, "frame": 2, "color": "$kulche_color_mandrake"},
+			{"id": "$kulche_1x1_02_tt_walls_3", "x": 0, "y": -15, "frame": 3, "color": "$kulche_color_mandrake"},
+			
+			{"id": "$kulche_1x1_02_tt_walls_0", "x": 0, "y": -15, "frame": 0, "color": "$kulche_color_sandy"},
+			{"id": "$kulche_1x1_02_tt_walls_1", "x": 0, "y": -15, "frame": 1, "color": "$kulche_color_sandy"},
+			{"id": "$kulche_1x1_02_tt_walls_2", "x": 0, "y": -15, "frame": 2, "color": "$kulche_color_sandy"},
+			{"id": "$kulche_1x1_02_tt_walls_3", "x": 0, "y": -15, "frame": 3, "color": "$kulche_color_sandy"},
 
 				//roofs
 			
