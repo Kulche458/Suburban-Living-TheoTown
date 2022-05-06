@@ -6,6 +6,7 @@ function script:init()
     settings.placeHedges = settings.placeHedges or 3
     settings.alignToRoad = settings.alignToRoad or 2
     settings.showSuburbanRoad = settings.showSuburbanRoad or 2
+    settings.colorDistribution = settings.colorDistribution or 4
     road = Draft.getDraft('$kulche_suburbanroad00')
     road_rich = Draft.getDraft('$kulche_suburbanroad01')
 end
@@ -32,6 +33,13 @@ function script:settings()
             values = {1, 2},
             valueNames = {'Yes', 'No'},
             onChange = function(newState) settings.showSuburbanRoad = newState end
+        },
+        {
+            name = 'Building color distribution',
+            value = settings.colorDistribution,
+            values = {1, 2, 3, 4},
+            valueNames = {'No bias', 'Common', 'Colorful', 'Toned'},
+            onChange = function(newState) settings.colorDistribution = newState end
         }
     }
 end

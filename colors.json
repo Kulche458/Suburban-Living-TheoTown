@@ -76,6 +76,27 @@
 		"g":140,
 		"b":150			
 	},
+	{
+		"id":"$kulche_color_creamy",
+		"type":"color",
+		"r":245,
+		"g":230,
+		"b":205	
+	},
+	{
+		"id":"$kulche_color_mandrake",
+		"type":"color",
+		"r":175,
+		"g":175,
+		"b":215	
+	},
+	{
+		"id":"$kulche_color_sandy",
+		"type":"color",
+		"r":255,
+		"g":250,
+		"b":230	
+	},
 
 			//roofs
 

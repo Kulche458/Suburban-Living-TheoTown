@@ -16,6 +16,16 @@ local building_2x2_01_UPG
 local building_2x2_02
 local building_2x2_02_UPG
 
+local color_count_wall = 14
+local color_count_roof = 6
+
+local color_mode_common
+local color_mode_colorful
+local color_mode_toned
+
+local wall_color
+local roof_color
+
 math.randomseed(os.time())
 
 function script:init()
@@ -51,39 +61,85 @@ function script:init()
 end
 
 local function colors(x, y)
-    -- choose random wall color from 7 provided
-    for i = 5, 49 do
-        Tile.setBuildingAnimationFrame(x, y, 1, i)
-        Tile.pauseBuildingAnimation(x, y, i)
+
+--[[
+    color reference sheet:
+        1 - white [220,220,210]
+        2 - gray [127,127,122]
+        3 - mint [165,220,175]
+        4 - yellow [230,215,130]
+        5 - beige [200,185,150]
+        6 - lightblue [150,190,205]
+        7 - blue [100,110,160]
+        8 - olive [175,190,135]
+        9 - cyan [135,150,165]
+        10 - copper [205,135,105]
+        11 - lavender [180,140,150]
+        12 - creamy [245,230,205]
+        13 - mandrake [175,175,215]
+        14 - sandy [255,250,230]
+--]]
+
+    -- color groups
+    color_mode_common = {1, 2, 5, 12, 14} --mostly achromatic
+    color_mode_colorful = {3, 4, 6, 7, 8, 9, 10, 11, 13} --fully chromatic
+    color_mode_toned = {1, 2, 3, 5, 6, 8, 10, 12, 13, 14} --mixed
+
+    local chance = math.random(0, 100)
+    if settings.colorDistribution == 2 then
+        if chance < 15 then
+            wall_color = color_mode_colorful[math.random(1, #color_mode_colorful)]
+        elseif chance > 85 then
+            wall_color = color_mode_toned[math.random(1, #color_mode_toned)]
+        else
+            wall_color = color_mode_common[math.random(1, #color_mode_common)]
+        end
+    elseif settings.colorDistribution == 3 then
+        if chance < 15 then
+            wall_color = color_mode_common[math.random(1, #color_mode_common)]
+        elseif chance > 85 then
+            wall_color = color_mode_toned[math.random(1, #color_mode_toned)]
+        else
+            wall_color = color_mode_colorful[math.random(1, #color_mode_colorful)]
+        end
+    elseif settings.colorDistribution == 4 then
+        if chance < 15 then
+            wall_color = color_mode_common[math.random(1, #color_mode_common)]
+        elseif chance > 85 then
+            wall_color = color_mode_colorful[math.random(1, #color_mode_colorful)]
+        else
+            wall_color = color_mode_toned[math.random(1, #color_mode_toned)]
+        end
+    else
+        -- choose a random wall color from [x] colors
+        wall_color = math.random(1, color_count_wall)
     end
-    for i = 1, 4 do
-        Tile.setBuildingAnimationFrame(x, y, 1, i)
-        Tile.pauseBuildingAnimation(x, y, i)
-    end
-    for i = 81, 84 do
+
+    -- choose a random roof color from [x] colors
+    roof_color = math.random(1, color_count_roof)
+
+    -- all wall animations: pause and set to transparent
+    for i = 5, 4 + color_count_wall * 4 do
         Tile.setBuildingAnimationFrame(x, y, 1, i)
         Tile.pauseBuildingAnimation(x, y, i)
     end
 
-    local walls_color = math.random(1, 11)
-    for i = 1, 11 do
-        if i == walls_color then
-            walls_animation = i * 4 + 1
-        end
-    end
-    
-    local roof_color = math.random(1, 6)
-    for i = 1, 6 do
-        if i == roof_color then
-            roof_animation = i * 4 + 45
-        end
+    -- wall animations of chosen color: pause and set to opaque
+    for i = 1 + wall_color * 4, 4 + wall_color * 4 do
+        Tile.setBuildingAnimationFrame(x, y, 2, i)
+        Tile.pauseBuildingAnimation(x, y, i)
     end
 
-    for i = 0, 3 do
-        Tile.setBuildingAnimationFrame(x, y, 2, walls_animation)
-        Tile.resumeBuildingAnimation(x, y, walls_animation + i, 0)
-        Tile.setBuildingAnimationFrame(x, y, 2, roof_animation)
-        Tile.resumeBuildingAnimation(x, y, roof_animation + i, 0)
+    -- all roof animations: pause and set to transparent
+    for i = 5 + color_count_wall * 4, (4 + color_count_wall * 4) + color_count_roof * 4 do
+        Tile.setBuildingAnimationFrame(x, y, 1, i)
+        Tile.pauseBuildingAnimation(x, y, i)
+    end
+
+    -- wall roof of chosen color: pause and set to opaque
+    for i = (1 + color_count_wall * 4) + roof_color * 4, (4 + color_count_wall * 4) + roof_color * 4 do
+        Tile.setBuildingAnimationFrame(x, y, 2, i)
+        Tile.pauseBuildingAnimation(x, y, i)
     end
 
     -- hedges
@@ -94,7 +150,7 @@ local function colors(x, y)
             Tile.resumeBuildingAnimation(x, y, i, 0)
         end
         
-        for i = 81, 84 do
+        for i = 93, 96 do
             Tile.setBuildingAnimationFrame(x, y, 2, i)
             Tile.resumeBuildingAnimation(x, y, i, 0)
         end
@@ -104,7 +160,7 @@ local function colors(x, y)
             Tile.resumeBuildingAnimation(x, y, i, 0)
         end
         
-        for i = 81, 84 do
+        for i = 93, 96 do
             Tile.setBuildingAnimationFrame(x, y, 1, i)
             Tile.resumeBuildingAnimation(x, y, i, 0)
         end
@@ -115,7 +171,7 @@ local function colors(x, y)
                 Tile.resumeBuildingAnimation(x, y, i, 0)
             end
             
-            for i = 81, 84 do
+            for i = 93, 96 do
                 Tile.setBuildingAnimationFrame(x, y, 2, i)
                 Tile.resumeBuildingAnimation(x, y, i, 0)
             end
@@ -125,7 +181,7 @@ local function colors(x, y)
                 Tile.resumeBuildingAnimation(x, y, i, 0)
             end
             
-            for i = 81, 84 do
+            for i = 93, 96 do
                 Tile.setBuildingAnimationFrame(x, y, 1, i)
                 Tile.resumeBuildingAnimation(x, y, i, 0)
             end
