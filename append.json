@@ -1,0 +1,7 @@
+[
+	{
+		"id": "$kulche_suburbs_append00",
+		"type": "script",
+		"script": "append.lua"
+	}
+]
