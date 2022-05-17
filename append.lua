@@ -19,6 +19,11 @@ for i = 1, 2 do -- sizes
             append:add('{"id": "$kulche_'..i..'x'..i..'_0'..k..'_details_'..j..'_UPG", "type": "animation", "speed": 0, "frames": [{"bmp": "'..i..'x'..i..'_'..k..'_details_UPG.png", "x": '..(32*i*j)..', "w": '..(32*i)..'}]}')
             append:add('{"id": "$kulche_'..i..'x'..i..'_0'..k..'_winter_'..j..'_UPG", "type": "animation", "speed": 0, "frames": [{"bmp": "'..i..'x'..i..'_'..k..'_winter_UPG.png", "x": '..(32*i*j)..', "w": '..(32*i)..'}]}')
 
+            append:add('{"id": "$kulche_'..i..'x'..i..'_0'..k..'_tt_walls_'..j..'", "type": "animation", "speed": 0, "frames": [{"bmp": "empty.png"}, {"bmp": "'..i..'x'..i..'_'..k..'_tt_walls.png", "x": '..(32*i*j)..', "w": '..(32*i)..'}]}')
+            append:add('{"id": "$kulche_'..i..'x'..i..'_0'..k..'_tt_roof_'..j..'", "type": "animation", "speed": 0, "frames": [{"bmp": "empty.png"}, {"bmp": "'..i..'x'..i..'_'..k..'_tt_roof.png", "x": '..(32*i*j)..', "w": '..(32*i)..'}]}')
+            append:add('{"id": "$kulche_'..i..'x'..i..'_0'..k..'_tt_details_'..j..'", "type": "animation", "speed": 0, "frames": [{"bmp": "'..i..'x'..i..'_'..k..'_tt_details.png", "x": '..(32*i*j)..', "w": '..(32*i)..'}]}')
+            append:add('{"id": "$kulche_'..i..'x'..i..'_0'..k..'_tt_winter_'..j..'", "type": "animation", "speed": 0, "frames": [{"bmp": "'..i..'x'..i..'_'..k..'_tt_winter.png", "x": '..(32*i*j)..', "w": '..(32*i)..'}]}')
+
         end
     end
 end

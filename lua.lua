@@ -14,6 +14,20 @@ local color_mode_toned
 local wall_color
 local roof_color
 
+local building_1x1_00
+local building_1x1_01
+local building_1x1_02
+local building_1x1_00_UPG
+local building_1x1_01_UPG
+local building_1x1_02_UPG
+
+local building_2x2_00
+local building_2x2_01
+local building_2x2_02
+local building_2x2_00_UPG
+local building_2x2_01_UPG
+local building_2x2_02_UPG
+
 math.randomseed(os.time())
 
 function script:init()
@@ -43,6 +57,20 @@ function script:init()
         Draft.getDraft('$kulche_suburbs_2x2_01_tt'),
         Draft.getDraft('$kulche_suburbs_2x2_02_tt')
     }
+
+    building_1x1_00 = Draft.getDraft('$kulche_suburbs_1x1_00')
+    building_1x1_01 = Draft.getDraft('$kulche_suburbs_1x1_01')
+    building_1x1_02 = Draft.getDraft('$kulche_suburbs_1x1_02')
+    building_1x1_00_UPG = Draft.getDraft('$kulche_suburbs_1x1_00_UPG')
+    building_1x1_01_UPG = Draft.getDraft('$kulche_suburbs_1x1_01_UPG')
+    building_1x1_02_UPG = Draft.getDraft('$kulche_suburbs_1x1_02_UPG')
+
+    building_2x2_00 = Draft.getDraft('$kulche_suburbs_2x2_00')
+    building_2x2_01 = Draft.getDraft('$kulche_suburbs_2x2_01')
+    building_2x2_02 = Draft.getDraft('$kulche_suburbs_2x2_02')
+    building_2x2_00_UPG = Draft.getDraft('$kulche_suburbs_2x2_00_UPG')
+    building_2x2_01_UPG = Draft.getDraft('$kulche_suburbs_2x2_01_UPG')
+    building_2x2_02_UPG = Draft.getDraft('$kulche_suburbs_2x2_02_UPG')
 end
 
 local function colors(x, y)
@@ -217,8 +245,16 @@ function script:daily(x, y, level)
                 
                 if buildings2x2:contains(Tile.getBuildingDraft(x, y)) then
                     local building = Tile.getBuildingDraft(x, y)
-                    Builder.remove(x, y)
-                    Builder.buildBuilding(building, x, y)
+                    if building == building_2x2_00 then
+                        Builder.remove(x, y)
+                        Builder.buildBuilding(building_2x2_00_UPG, x, y)
+                    elseif building == building_2x2_01 then
+                        Builder.remove(x, y)
+                        Builder.buildBuilding(building_2x2_01_UPG, x, y)
+                    elseif building == building_2x2_02 then
+                        Builder.remove(x, y)
+                        Builder.buildBuilding(building_2x2_02_UPG, x, y)
+                    end
                     local building = nil
                 end
 
@@ -230,8 +266,16 @@ function script:daily(x, y, level)
                 
                 if buildings1x1:contains(Tile.getBuildingDraft(x, y)) then
                     local building = Tile.getBuildingDraft(x, y)
-                    Builder.remove(x, y)
-                    Builder.buildBuilding(building, x, y)
+                    if building == building_1x1_00 then
+                        Builder.remove(x, y)
+                        Builder.buildBuilding(building_1x1_00_UPG, x, y)
+                    elseif building == building_1x1_01 then
+                        Builder.remove(x, y)
+                        Builder.buildBuilding(building_1x1_01_UPG, x, y)
+                    elseif building == building_1x1_02 then
+                        Builder.remove(x, y)
+                        Builder.buildBuilding(building_1x1_02_UPG, x, y)
+                    end
                     local building = nil
                 end
 

@@ -6,8 +6,7 @@ planned features:
   - level ttt houses - preferably color-variated
   - more decoration buildings
   - allow choosing color combinations (+ settings) (optionalTM)
-  - attempt to reproduce and fix graphical issues
 
 (unprioritised)
 
-**Latest release:  version v1.1**
+**Latest release:  version v1.2**
