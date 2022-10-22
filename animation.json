@@ -1,0 +1,26 @@
+[
+	{
+    "id": "$kulche_suburbs_animation_2x2_00_roof",
+    "type": "animation",
+    "frames": [
+      {"bmp": "2x2_00_roof.png", "w": 40, "h": 20, "x": 0},
+      {"bmp": "2x2_00_roof.png", "w": 38, "h": 20, "x": 40},
+      {"bmp": "2x2_00_roof.png", "w": 40, "h": 20, "x": 78},
+      {"bmp": "2x2_00_roof.png", "w": 38, "h": 20, "x": 118}
+    ],
+    "rotation aware": true,
+    "colors": ["#665657"]
+	},
+	{
+    "id": "$kulche_suburbs_animation_2x2_00_walls",
+    "type": "animation",
+    "frames": [
+      {"bmp": "2x2_00_walls.png", "w": 38, "h": 20, "x": 0},
+      {"bmp": "2x2_00_walls.png", "w": 36, "h": 20, "x": 38},
+      {"bmp": "2x2_00_walls.png", "w": 38, "h": 20, "x": 74},
+      {"bmp": "2x2_00_walls.png", "w": 36, "h": 20, "x": 112}
+    ],
+    "rotation aware": true,
+    "colors": ["#ADADD6"]
+	}
+]

@@ -1,0 +1,29 @@
+[
+  {
+      "id": "$kulche_suburbs_2x2_00",
+      "type": "residential",
+      "width": 2,
+      "height": 2,
+      "frames": [
+        {"bmp": "2x2_00_base.png", "w": 64, "count": 4}
+      ],
+      "rotation aware": true,
+      "power": -2,
+      "water": -2,
+      "script": "script_2x2.lua",
+      //"zone": "$kulche_suburbanzone00",
+      "people": 9,
+      "animation night light probability":0.45,
+      "draw ground": true,
+      "animation":[
+        {"id": "$kulche_suburbs_animation_2x2_00_roof", "x": 11, "y": -20, "frame": 0},
+        {"id": "$kulche_suburbs_animation_2x2_00_roof", "x": 7, "y": -17, "frame": 1},
+        {"id": "$kulche_suburbs_animation_2x2_00_roof", "x": 13, "y": -14, "frame": 2},
+        {"id": "$kulche_suburbs_animation_2x2_00_roof", "x": 19, "y": -18, "frame": 3},
+        {"id": "$kulche_suburbs_animation_2x2_00_walls", "x": 12, "y": -13, "frame": 0},
+        {"id": "$kulche_suburbs_animation_2x2_00_walls", "x": 8, "y": -9, "frame": 1},
+        {"id": "$kulche_suburbs_animation_2x2_00_walls", "x": 14, "y": -6, "frame": 2},
+        {"id": "$kulche_suburbs_animation_2x2_00_walls", "x": 20, "y": -11, "frame": 3}
+    ]
+  }
+]
