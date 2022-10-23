@@ -8,7 +8,7 @@ local function building_settings(x, y)
         Tile.setBuildingFrame(x, y, 1)
     elseif Tile.isRoad(x + 1, y + 2) and Tile.isRoad(x, y + 2) then
         Tile.setBuildingFrame(x, y, 2)
-    elseif Tile.isRoad(x - 1, y) and Tile.isRoad(x - 1, y - 1) then
+    elseif Tile.isRoad(x - 1, y) and Tile.isRoad(x - 1, y + 1) then
         Tile.setBuildingFrame(x, y, 3)
     end
 
