@@ -1,0 +1,2 @@
+wall noise: 14
+roof noise: 12

@@ -1,23 +1,28 @@
 [
   {
-      "id": "$kulche_suburbs_2x2_00",
-      "type": "residential",
-      "width": 2,
-      "height": 2,
-      "frames": [
-        {"bmp": "2x2_00_base.png", "w": 64, "count": 4}
-      ],
-      "rotation aware": true,
-      "power": -2,
-      "water": -2,
-      "script": "script_2x2.lua",
-      //"zone": "$kulche_suburbanzone00",
-      "people": 9,
-      "animation night light probability":0.45,
-      "draw ground": true,
-      "animation":[
-        {"id": "$kulche_suburbs_animation_2x2_00_roof"},
-        {"id": "$kulche_suburbs_animation_2x2_00_walls"}
+    "id": "$kulche_suburbs_2x2_template",
+    "type": "template",
+    "width": 2,
+    "height": 2,
+    "rotation aware": true,
+    "power": -2,
+    "water": -2,
+    "script": "script_2x2.lua",
+    //"zone": "$kulche_suburbanzone00",
+    "people": 9,
+    "animation night light probability": 0.45,
+    "draw ground": true
+  },
+  {
+    "id": "$kulche_suburbs_2x2_00",
+    "type": "residential",
+    "template": "$kulche_suburbs_2x2_template",
+    "frames": [
+      {"bmp": "2x2_00_base.png", "w": 64, "count": 4}
+    ],
+    "animation":[
+      {"id": "$kulche_suburbs_animation_2x2_00_roof"},
+      {"id": "$kulche_suburbs_animation_2x2_00_walls"}
     ]
   }
 ]
