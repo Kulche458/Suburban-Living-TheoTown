@@ -21,8 +21,20 @@
       {"bmp": "2x2_00_base.png", "w": 64, "count": 4}
     ],
     "animation":[
-      {"id": "$kulche_suburbs_animation_2x2_00_roof"},
-      {"id": "$kulche_suburbs_animation_2x2_00_walls"}
+      {"id": "$kulche_suburbs_animation_2x2_00_walls"},
+      {"id": "$kulche_suburbs_animation_2x2_00_roof"}
+    ]
+  },
+  {
+    "id": "$kulche_suburbs_2x2_02",
+    "type": "residential",
+    "template": "$kulche_suburbs_2x2_template",
+    "frames": [
+      {"bmp": "2x2_01_base.png", "w": 64, "count": 4}
+    ],
+    "animation":[
+      {"id": "$kulche_suburbs_animation_2x2_01_walls"},
+      {"id": "$kulche_suburbs_animation_2x2_01_roof"}
     ]
   }
 ]

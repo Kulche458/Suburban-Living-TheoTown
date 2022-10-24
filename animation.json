@@ -32,5 +32,27 @@
       {"bmp": "2x2_00_walls.png", "w": 38, "h": 20, "x": 74, "handle x": -14, "handle y": 6},
       {"bmp": "2x2_00_walls.png", "w": 36, "h": 20, "x": 112, "handle x": -20, "handle y": 11}
     ]
+	},
+	{
+    "id": "$kulche_suburbs_animation_2x2_01_roof",
+    "type": "animation",
+    "template": "$kulche_suburbs_animation_2x2_template_roof",
+    "frames": [
+      {"bmp": "2x2_01_roof.png", "w": 38, "h": 19, "x": 0, "handle x": -19, "handle y": 18},
+      {"bmp": "2x2_01_roof.png", "w": 36, "h": 19, "x": 38, "handle x": -11, "handle y": 20},
+      {"bmp": "2x2_01_roof.png", "w": 38, "h": 19, "x": 74, "handle x": -7, "handle y": 15},
+      {"bmp": "2x2_01_roof.png", "w": 36, "h": 19, "x": 112, "handle x": -17, "handle y": 14}
+    ]
+	},
+	{
+    "id": "$kulche_suburbs_animation_2x2_01_walls",
+    "type": "animation",
+    "template": "$kulche_suburbs_animation_2x2_template_walls",
+    "frames": [
+      {"bmp": "2x2_01_walls.png", "w": 36, "h": 19, "x": 0, "handle x": -20, "handle y": 11},
+      {"bmp": "2x2_01_walls.png", "w": 34, "h": 19, "x": 36, "handle x": -12, "handle y": 11},
+      {"bmp": "2x2_01_walls.png", "w": 36, "h": 19, "x": 70, "handle x": -8, "handle y": 8},
+      {"bmp": "2x2_01_walls.png", "w": 34, "h": 19, "x": 106, "handle x": -18, "handle y": 7}
+    ]
 	}
 ]

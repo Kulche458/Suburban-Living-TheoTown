@@ -2,11 +2,12 @@
 
 planned features:
 
-  - new variants (1x1, 2x2, perhaps 3x3)
-  - level ttt houses - preferably color-variated
-  - more decoration buildings
-  - allow choosing color combinations (+ settings) (optionalTM)
+  - new variants
+  - reimplement roads
+  - winter frames
+  - decoration buildings
+  - trimmed grass ground
+  - connecting backyards and fences
+  - allow choosing color combinations
 
 (unprioritised)
-
-**Latest release:  version v1.2**
