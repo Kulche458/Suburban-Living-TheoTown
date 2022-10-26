@@ -1,4 +1,54 @@
 [
+	{
+		"separator": true,
+		"id": "$kulche_suburbs_zone_00",
+		"type": "zone",
+		"placeable": true,
+		"price": 75,
+		"monthly price": 0,
+		"rci": true,
+		"base": "$zoneresidential",
+		"title": "Suburban Zone",
+		"text": "Small residential houses will be built here.\nNot influenced by inflation as much as other zones.",
+		"price factor": 0.0015,
+		"frames": [
+			{"bmp": "zone_tile.png"}
+		],
+		"preview frames": [
+			{"bmp": "zone_icon.png"}
+		]
+	},
+	{
+		"id": "$kulche_suburbs_decorations_00",
+		"title": "Suburban Deco",
+		"text": "Decorational trees and other lush plantlife.",
+		"width": 1,
+		"height": 1,
+		"type": "decoration",
+    "rotation aware": true,
+    "draw ground": true,
+		"frames": [
+      {"bmp": "decorations.png", "w": 32, "count": 4}
+    ],
+		"price": 1,
+		"monthly price": 0,
+		"meta": {"tags": {"decorator": {"zones": ["$kulche_suburbs_zone_00"]}}}
+	},
+	{
+		"id": "$kulche_suburbs_decorations_01",
+		"title": "Backyard",
+		"text": "Property tax included!",
+		"width": 1,
+		"height": 1,
+		"type": "decoration",
+    "rotation aware": true,
+    "draw ground": true,
+		"frames": [
+      {"bmp": "decorations_backyard.png", "w": 32, "count": 4}
+    ],
+		"price": 0,
+		"monthly price": 0
+	},
   {
     "id": "$kulche_suburbs_2x2_template",
     "type": "template",
@@ -8,7 +58,7 @@
     "power": -2,
     "water": -2,
     "script": "script_2x2.lua",
-    //"zone": "$kulche_suburbanzone00",
+    "zone": "$kulche_suburbs_zone_00",
     "people": 9,
     "animation night light probability": 0.45,
     "draw ground": true
