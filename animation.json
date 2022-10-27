@@ -1,5 +1,73 @@
 [
   {
+    "id": "$kulche_suburbs_animation_fence_1x1_topleft",
+    "type": "animation",
+    "speed": 0,
+    "frames": [
+      {"bmp": "fence_1x1.png", "w": 16, "x": 16, "handle x": 0, "handle y": 12}
+    ]
+  },
+  {
+    "id": "$kulche_suburbs_animation_fence_1x1_topright",
+    "type": "animation",
+    "speed": 0,
+    "frames": [
+      {"bmp": "fence_1x1.png", "w": 16, "x": 0, "handle x": -16, "handle y": 12}
+    ]
+  },
+  {
+    "id": "$kulche_suburbs_animation_fence_1x1_bottomleft",
+    "type": "animation",
+    "speed": 0,
+    "frames": [
+      {"bmp": "fence_1x1.png", "w": 16, "x": 0, "handle x": 0, "handle y": 4}
+    ]
+  },
+  {
+    "id": "$kulche_suburbs_animation_fence_1x1_bottomright",
+    "type": "animation",
+    "speed": 0,
+    "frames": [
+      {"bmp": "fence_1x1.png", "w": 16, "x": 16, "handle x": -16, "handle y": 4}
+    ]
+  },
+  {
+    "id": "$kulche_suburbs_animation_fence_2x2_topleft",
+    "type": "animation",
+    "speed": 0,
+    "frames": [
+      {"bmp": "fence_2x2.png", "w": 32, "x": 32, "handle x": 0, "handle y": 20},
+      {"bmp": "empty.png"}
+    ]
+  },
+  {
+    "id": "$kulche_suburbs_animation_fence_2x2_topright",
+    "type": "animation",
+    "speed": 0,
+    "frames": [
+      {"bmp": "fence_2x2.png", "w": 32, "x": 0, "handle x": -32, "handle y": 20},
+      {"bmp": "empty.png"}
+    ]
+  },
+  {
+    "id": "$kulche_suburbs_animation_fence_2x2_bottomleft",
+    "type": "animation",
+    "speed": 0,
+    "frames": [
+      {"bmp": "fence_2x2.png", "w": 32, "x": 0, "handle x": 0, "handle y": 4},
+      {"bmp": "empty.png"}
+    ]
+  },
+  {
+    "id": "$kulche_suburbs_animation_fence_2x2_bottomright",
+    "type": "animation",
+    "speed": 0,
+    "frames": [
+      {"bmp": "fence_2x2.png", "w": 32, "x": 32, "handle x": -32, "handle y": 4},
+      {"bmp": "empty.png"}
+    ]
+  },
+  {
     "id": "$kulche_suburbs_animation_2x2_template_roof",
     "type": "template",
     "rotation aware": true,
@@ -11,6 +79,17 @@
     "rotation aware": true,
     "colors": ["#ADADD6", "#F2EFE6", "#666461", "#7CB297", "#BFB069", "#B29F85", "#CCC1A3", "#A3B4CC", "#5B6B8C", "#7E996B", "#66777F", "#A57F63"]
   },
+	{
+    "id": "$kulche_suburbs_animation_2x2_00_base",
+    "type": "animation",
+    "rotation aware": true,
+    "frames": [
+      {"bmp": "2x2_00_base.png", "w": 64, "h": 37, "x": 0, "handle x": 0, "handle y": 21},
+      {"bmp": "2x2_00_base.png", "w": 64, "h": 37, "x": 64, "handle x": 0, "handle y": 21},
+      {"bmp": "2x2_00_base.png", "w": 64, "h": 37, "x": 128, "handle x": 0, "handle y": 21},
+      {"bmp": "2x2_00_base.png", "w": 64, "h": 37, "x": 192, "handle x": 0, "handle y": 21}
+    ]
+	},
 	{
     "id": "$kulche_suburbs_animation_2x2_00_roof",
     "type": "animation",
@@ -31,6 +110,17 @@
       {"bmp": "2x2_00_walls.png", "w": 36, "h": 20, "x": 38, "handle x": -8, "handle y": 9},
       {"bmp": "2x2_00_walls.png", "w": 38, "h": 20, "x": 74, "handle x": -14, "handle y": 6},
       {"bmp": "2x2_00_walls.png", "w": 36, "h": 20, "x": 112, "handle x": -20, "handle y": 11}
+    ]
+	},
+	{
+    "id": "$kulche_suburbs_animation_2x2_01_base",
+    "type": "animation",
+    "rotation aware": true,
+    "frames": [
+      {"bmp": "2x2_01_base.png", "w": 64, "h": 40, "x": 0, "handle x": 0, "handle y": 24},
+      {"bmp": "2x2_01_base.png", "w": 64, "h": 40, "x": 64, "handle x": 0, "handle y": 24},
+      {"bmp": "2x2_01_base.png", "w": 64, "h": 40, "x": 128, "handle x": 0, "handle y": 24},
+      {"bmp": "2x2_01_base.png", "w": 64, "h": 40, "x": 192, "handle x": 0, "handle y": 24}
     ]
 	},
 	{

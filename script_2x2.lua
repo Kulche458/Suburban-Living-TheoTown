@@ -15,12 +15,17 @@ local function building_settings(x, y)
         Tile.setBuildingFrame(x, y, 3)
     end
 
+    for i = 1, 11 do
+        Tile.setBuildingAnimationFrame(x, y, 1, i)
+    end
+
     if Tile.getBuildingFrame(x, y) == 0 then
         if (Tile.getBuildingDraft(x, y + 2) == decorations_draft and Tile.getBuildingDraft(x + 1, y + 2) == decorations_draft) then
             Builder.remove(x, y + 2)
             Builder.remove(x + 1, y + 2)
             Builder.buildBuilding(backyard_draft, x, y + 2, 0)
             Builder.buildBuilding(backyard_draft, x + 1, y + 2, 3)
+            Tile.setBuildingAnimationFrame(x, y, 2, 4)
         end
     elseif Tile.getBuildingFrame(x, y) == 1 then
         if (Tile.getBuildingDraft(x - 1, y) == decorations_draft and Tile.getBuildingDraft(x - 1, y + 1) == decorations_draft) then
@@ -28,6 +33,7 @@ local function building_settings(x, y)
             Builder.remove(x - 1, y + 1)
             Builder.buildBuilding(backyard_draft, x - 1, y, 1)
             Builder.buildBuilding(backyard_draft, x - 1, y + 1, 0)
+            Tile.setBuildingAnimationFrame(x, y, 2, 2)
         end
     elseif Tile.getBuildingFrame(x, y) == 2 then
         if (Tile.getBuildingDraft(x, y - 1) == decorations_draft and Tile.getBuildingDraft(x + 1, y - 1) == decorations_draft) then
@@ -35,6 +41,7 @@ local function building_settings(x, y)
             Builder.remove(x + 1, y - 1)
             Builder.buildBuilding(backyard_draft, x, y - 1, 1)
             Builder.buildBuilding(backyard_draft, x + 1, y - 1, 2)
+            Tile.setBuildingAnimationFrame(x, y, 2, 9)
         end
     elseif Tile.getBuildingFrame(x, y) == 3 then
         if (Tile.getBuildingDraft(x + 2, y) == decorations_draft and Tile.getBuildingDraft(x + 2, y + 1) == decorations_draft) then
@@ -42,6 +49,7 @@ local function building_settings(x, y)
             Builder.remove(x + 2, y + 1)
             Builder.buildBuilding(backyard_draft, x + 2, y, 2)
             Builder.buildBuilding(backyard_draft, x + 2, y + 1, 3)
+            Tile.setBuildingAnimationFrame(x, y, 2, 11)
         end
     end
 
