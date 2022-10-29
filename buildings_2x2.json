@@ -51,6 +51,7 @@
     "animation": [
       {"id": "$kulche_suburbs_animation_fence_1x1_topleft", "frames": [0, 1]},
       {"id": "$kulche_suburbs_animation_fence_1x1_topright", "frames": [0, 3]},
+      {"id": "$kulche_suburbs_animation_backyard_00", "frames": [0, 1, 2, 3]},
       {"id": "$kulche_suburbs_animation_fence_1x1_bottomleft", "frames": [1, 2]},
       {"id": "$kulche_suburbs_animation_fence_1x1_bottomright", "frames": [2, 3]}
     ]
