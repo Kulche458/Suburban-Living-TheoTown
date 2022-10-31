@@ -72,7 +72,15 @@
     "type": "animation",
     "rotation aware": true,
     "frames": [
-      {"bmp": "decorations_backyard.png", "w": 32, "handle y": 15, "count": 4}
+      {"bmp": "decorations_backyard.png", "w": 32, "h": 23, "y": 0, "handle y": 15, "count": 4}
+    ]
+  },
+  {
+    "id": "$kulche_suburbs_animation_backyard_01",
+    "type": "animation",
+    "rotation aware": true,
+    "frames": [
+      {"bmp": "decorations_backyard.png", "w": 32, "h": 23, "y": 23, "handle y": 15, "count": 4}
     ]
   },
   {

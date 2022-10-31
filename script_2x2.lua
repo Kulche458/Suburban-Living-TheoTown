@@ -19,36 +19,41 @@ local function building_settings(x, y)
         Tile.setBuildingAnimationFrame(x, y, 1, i)
     end
 
+    local array1 = {0, 4}
+    local array2 = {3, 7}
+    local array3 = {1, 5}
+    local array4 = {2, 6}
+
     if Tile.getBuildingFrame(x, y) == 0 then
         if (Tile.getBuildingDraft(x, y + 2) == decorations_draft and Tile.getBuildingDraft(x + 1, y + 2) == decorations_draft) then
             Builder.remove(x, y + 2)
             Builder.remove(x + 1, y + 2)
-            Builder.buildBuilding(backyard_draft, x, y + 2, 0)
-            Builder.buildBuilding(backyard_draft, x + 1, y + 2, 3)
+            Builder.buildBuilding(backyard_draft, x, y + 2, array1[math.random(1, #array1)])
+            Builder.buildBuilding(backyard_draft, x + 1, y + 2, array2[math.random(1, #array2)])
             Tile.setBuildingAnimationFrame(x, y, 2, 4)
         end
     elseif Tile.getBuildingFrame(x, y) == 1 then
         if (Tile.getBuildingDraft(x - 1, y) == decorations_draft and Tile.getBuildingDraft(x - 1, y + 1) == decorations_draft) then
             Builder.remove(x - 1, y)
             Builder.remove(x - 1, y + 1)
-            Builder.buildBuilding(backyard_draft, x - 1, y, 1)
-            Builder.buildBuilding(backyard_draft, x - 1, y + 1, 0)
+            Builder.buildBuilding(backyard_draft, x - 1, y, array3[math.random(1, #array3)])
+            Builder.buildBuilding(backyard_draft, x - 1, y + 1, array1[math.random(1, #array1)])
             Tile.setBuildingAnimationFrame(x, y, 2, 2)
         end
     elseif Tile.getBuildingFrame(x, y) == 2 then
         if (Tile.getBuildingDraft(x, y - 1) == decorations_draft and Tile.getBuildingDraft(x + 1, y - 1) == decorations_draft) then
             Builder.remove(x, y - 1)
             Builder.remove(x + 1, y - 1)
-            Builder.buildBuilding(backyard_draft, x, y - 1, 1)
-            Builder.buildBuilding(backyard_draft, x + 1, y - 1, 2)
+            Builder.buildBuilding(backyard_draft, x, y - 1, array3[math.random(1, #array3)])
+            Builder.buildBuilding(backyard_draft, x + 1, y - 1, array4[math.random(1, #array4)])
             Tile.setBuildingAnimationFrame(x, y, 2, 9)
         end
     elseif Tile.getBuildingFrame(x, y) == 3 then
         if (Tile.getBuildingDraft(x + 2, y) == decorations_draft and Tile.getBuildingDraft(x + 2, y + 1) == decorations_draft) then
             Builder.remove(x + 2, y)
             Builder.remove(x + 2, y + 1)
-            Builder.buildBuilding(backyard_draft, x + 2, y, 2)
-            Builder.buildBuilding(backyard_draft, x + 2, y + 1, 3)
+            Builder.buildBuilding(backyard_draft, x + 2, y, array4[math.random(1, #array4)])
+            Builder.buildBuilding(backyard_draft, x + 2, y + 1, array2[math.random(1, #array2)])
             Tile.setBuildingAnimationFrame(x, y, 2, 11)
         end
     end

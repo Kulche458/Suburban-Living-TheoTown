@@ -1,13 +1,15 @@
 # Suburban-Living-TheoTown
 
-planned features:
+<Add description later>
+
+Planned upcoming features:
 
   - new variants
   - reimplement roads
   - winter frames
-  - decoration buildings
+  - night frames
+  - more decoration buildings
   - trimmed grass ground
-  - connecting backyards and fences
   - allow choosing color combinations
   - unclusterfuck backyard code
 
