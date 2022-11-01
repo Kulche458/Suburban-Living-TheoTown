@@ -4,7 +4,7 @@ local backyard_draft = Draft.getDraft('$kulche_suburbs_decorations_01')
 
 local function building_settings(x, y)
 
-        -- align to nearby roads
+        -- Align to nearby roads
     if Tile.isRoad(x, y - 1) and Tile.isRoad(x + 1, y - 1) then
         Tile.setBuildingFrame(x, y, 0)
     elseif Tile.isRoad(x + 2, y) and Tile.isRoad(x + 2, y + 1) then
@@ -15,15 +15,17 @@ local function building_settings(x, y)
         Tile.setBuildingFrame(x, y, 3)
     end
 
+        -- Set all fence animations of a building to visible
     for i = 1, 11 do
         Tile.setBuildingAnimationFrame(x, y, 1, i)
     end
 
-    local array1 = {0, 4}
-    local array2 = {3, 7}
-    local array3 = {1, 5}
-    local array4 = {2, 6}
+    local array1 = {0, 4, 8}
+    local array2 = {3, 7, 11}
+    local array3 = {1, 5, 9}
+    local array4 = {2, 6, 10}
 
+        -- Generate backyards
     if Tile.getBuildingFrame(x, y) == 0 then
         if (Tile.getBuildingDraft(x, y + 2) == decorations_draft and Tile.getBuildingDraft(x + 1, y + 2) == decorations_draft) then
             Builder.remove(x, y + 2)
@@ -61,9 +63,12 @@ local function building_settings(x, y)
 end
 
 function script:event(x, y, level, event)
+
     if event == Script.EVENT_FINISHED then
 		building_settings(x, y)
     end
+
+        -- Remove backyards from demolished houses
     if event == Script.EVENT_REMOVE then
         if ((Tile.getBuildingDraft(x, y + 2) == backyard_draft and Tile.getBuildingDraft(x + 1, y + 2) == backyard_draft) and (Tile.getBuildingFrame(x, y + 2) == 0 and Tile.getBuildingFrame(x + 1, y + 2) == 3)) then
             Builder.remove(x, y + 2)
@@ -79,4 +84,5 @@ function script:event(x, y, level, event)
             Builder.remove(x + 2, y + 1)
         end
     end
+
 end

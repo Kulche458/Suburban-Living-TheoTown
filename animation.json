@@ -84,6 +84,14 @@
     ]
   },
   {
+    "id": "$kulche_suburbs_animation_backyard_02",
+    "type": "animation",
+    "rotation aware": true,
+    "frames": [
+      {"bmp": "decorations_backyard.png", "w": 32, "h": 16, "y": 46, "handle y": 8, "count": 4}
+    ]
+  },
+  {
     "id": "$kulche_suburbs_animation_2x2_template_roof",
     "type": "template",
     "rotation aware": true,
