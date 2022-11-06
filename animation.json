@@ -159,6 +159,17 @@
     ]
 	},
 	{
+    "id": "$kulche_suburbs_animation_2x2_01_winter",
+    "type": "animation",
+    "rotation aware": true,
+    "frames": [
+      {"bmp": "2x2_01_winter.png", "w": 64, "h": 40, "x": 0, "handle x": 0, "handle y": 24},
+      {"bmp": "2x2_01_winter.png", "w": 64, "h": 40, "x": 64, "handle x": 0, "handle y": 24},
+      {"bmp": "2x2_01_winter.png", "w": 64, "h": 40, "x": 128, "handle x": 0, "handle y": 24},
+      {"bmp": "2x2_01_winter.png", "w": 64, "h": 40, "x": 192, "handle x": 0, "handle y": 24}
+    ]
+	},
+	{
     "id": "$kulche_suburbs_animation_2x2_01_roof",
     "type": "animation",
     "template": "$kulche_suburbs_animation_2x2_template_roof",
