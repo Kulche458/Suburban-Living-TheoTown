@@ -16,7 +16,7 @@ local function building_settings(x, y)
     end
 
         -- Set all fence animations of a building to visible
-    for i = 1, 11 do
+    for i = 1, 12 do
         Tile.setBuildingAnimationFrame(x, y, 1, i)
     end
 
@@ -48,7 +48,7 @@ local function building_settings(x, y)
             Builder.remove(x + 1, y - 1)
             Builder.buildBuilding(backyard_draft, x, y - 1, array3[math.random(1, #array3)])
             Builder.buildBuilding(backyard_draft, x + 1, y - 1, array4[math.random(1, #array4)])
-            Tile.setBuildingAnimationFrame(x, y, 2, 9)
+            Tile.setBuildingAnimationFrame(x, y, 2, 10)
         end
     elseif Tile.getBuildingFrame(x, y) == 3 then
         if (Tile.getBuildingDraft(x + 2, y) == decorations_draft and Tile.getBuildingDraft(x + 2, y + 1) == decorations_draft) then
@@ -56,7 +56,7 @@ local function building_settings(x, y)
             Builder.remove(x + 2, y + 1)
             Builder.buildBuilding(backyard_draft, x + 2, y, array4[math.random(1, #array4)])
             Builder.buildBuilding(backyard_draft, x + 2, y + 1, array2[math.random(1, #array2)])
-            Tile.setBuildingAnimationFrame(x, y, 2, 11)
+            Tile.setBuildingAnimationFrame(x, y, 2, 12)
         end
     end
 

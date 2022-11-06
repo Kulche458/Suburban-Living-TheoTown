@@ -87,6 +87,7 @@
       {"id": "$kulche_suburbs_animation_2x2_00_base"},
       {"id": "$kulche_suburbs_animation_2x2_00_walls"},
       {"id": "$kulche_suburbs_animation_2x2_00_roof"},
+      {"id": "$kulche_suburbs_animation_2x2_00_winter", "in winter": true},
       {"id": "$kulche_suburbs_animation_fence_2x2_bottomleft", "frames": [1, 3]},
       {"id": "$kulche_suburbs_animation_fence_2x2_bottomleft", "frame": 2},
       {"id": "$kulche_suburbs_animation_fence_2x2_bottomright", "frames": [0, 2]},
