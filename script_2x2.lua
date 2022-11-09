@@ -70,16 +70,16 @@ function script:event(x, y, level, event)
 
         -- Remove backyards from demolished houses
     if event == Script.EVENT_REMOVE then
-        if ((Tile.getBuildingDraft(x, y + 2) == backyard_draft and Tile.getBuildingDraft(x + 1, y + 2) == backyard_draft) and (Tile.getBuildingFrame(x, y + 2) == 0 and Tile.getBuildingFrame(x + 1, y + 2) == 3)) then
+        if ((Tile.getBuildingDraft(x, y + 2) == backyard_draft and Tile.getBuildingDraft(x + 1, y + 2) == backyard_draft) and (Tile.getBuildingFrame(x, y + 2) % 4 == 0 and Tile.getBuildingFrame(x + 1, y + 2) % 4 == 3)) then
             Builder.remove(x, y + 2)
             Builder.remove(x + 1, y + 2)
-        elseif ((Tile.getBuildingDraft(x - 1, y) == backyard_draft and Tile.getBuildingDraft(x - 1, y + 1) == backyard_draft) and (Tile.getBuildingFrame(x - 1, y) == 1 and Tile.getBuildingFrame(x - 1, y + 1) == 0)) then
+        elseif ((Tile.getBuildingDraft(x - 1, y) == backyard_draft and Tile.getBuildingDraft(x - 1, y + 1) == backyard_draft) and (Tile.getBuildingFrame(x - 1, y) % 4 == 1 and Tile.getBuildingFrame(x - 1, y + 1) % 4 == 0)) then
             Builder.remove(x - 1, y)
             Builder.remove(x - 1, y + 1)
-        elseif ((Tile.getBuildingDraft(x, y - 1) == backyard_draft and Tile.getBuildingDraft(x + 1, y - 1) == backyard_draft) and (Tile.getBuildingFrame(x, y - 1) == 1 and Tile.getBuildingFrame(x + 1, y - 1) == 2)) then
+        elseif ((Tile.getBuildingDraft(x, y - 1) == backyard_draft and Tile.getBuildingDraft(x + 1, y - 1) == backyard_draft) and (Tile.getBuildingFrame(x, y - 1) % 4 == 1 and Tile.getBuildingFrame(x + 1, y - 1) % 4 == 2)) then
             Builder.remove(x, y - 1)
             Builder.remove(x + 1, y - 1)
-        elseif ((Tile.getBuildingDraft(x + 2, y) == backyard_draft and Tile.getBuildingDraft(x + 2, y + 1) == backyard_draft) and (Tile.getBuildingFrame(x + 2, y) == 2 and Tile.getBuildingFrame(x + 2, y + 1) == 3)) then
+        elseif ((Tile.getBuildingDraft(x + 2, y) == backyard_draft and Tile.getBuildingDraft(x + 2, y + 1) == backyard_draft) and (Tile.getBuildingFrame(x + 2, y) % 4 == 2 and Tile.getBuildingFrame(x + 2, y + 1) % 4 == 3)) then
             Builder.remove(x + 2, y)
             Builder.remove(x + 2, y + 1)
         end
