@@ -15,8 +15,7 @@ Planned upcoming features:
   - randomised car animations on driveways
   - rebalance building statistics
   - more decoration buildings
-  - trimmed grass ground
   - allow choosing color combinations
-  - unclusterfuck backyard code
+  - unclusterfuck backyard code (merge lobby's changes)
 
 (unprioritised)

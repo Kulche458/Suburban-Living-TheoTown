@@ -3,51 +3,67 @@
 		"separator": true,
 		"id": "$kulche_suburbs_zone_00",
 		"type": "zone",
-		"placeable": true,
-		"price": 75,
-		"monthly price": 0,
-		"rci": true,
-		"base": "$zoneresidential",
 		"title": "Suburban Zone",
 		"text": "Small residential houses will be built here.\nNot influenced by inflation as much as other zones.",
-		"price factor": 0.0015,
 		"frames": [
 			{"bmp": "zone_tile.png"}
 		],
 		"preview frames": [
 			{"bmp": "zone_icon.png"}
-		]
+		],
+		"base": "$zoneresidential",
+		"placeable": true,
+		"rci": true,
+		"price": 75,
+		"monthly price": 0,
+		"price factor": 0.0015
 	},
+  {
+    "id": "$kulche_suburbs_ground_00",
+    "type": "ground",
+    "template": "$template_ground",
+    "title": "Trimmed grass",
+    "text": "Nicely kempt grass, with an elegant striped pattern. Perfect for (upscale) neighborhoods.",
+    "frames": [
+      {"bmp": "ground.png", "w": 32, "handle y": 7, "count": 4}
+    ],
+    "border frames": [
+      {"bmp": "ground.png", "w": 32, "handle y": 7, "count": 4},
+      {"bmp": "ground.png", "w": 32, "handle y": 7, "count": 4},
+      {"bmp": "ground.png", "w": 32, "handle y": 7, "count": 4},
+      {"bmp": "ground.png", "w": 32, "handle y": 7, "count": 4}
+    ]
+  },
 	{
 		"id": "$kulche_suburbs_decorations_00",
-		"title": "Suburban Deco",
-		"text": "Decorational trees and other lush plantlife.",
+		"type": "decoration",
 		"width": 1,
 		"height": 1,
-		"type": "decoration",
-    "rotation aware": true,
-    "draw ground": true,
+		"title": "Suburban Deco",
+		"text": "Decorational trees and other lush plantlife.",
 		"frames": [
       {"bmp": "decorations.png", "w": 32, "count": 4}
     ],
+    "rotation aware": true,
+    "draw ground": true,
 		"price": 1,
 		"monthly price": 0,
 		"meta": {"tags": {"decorator": {"zones": ["$kulche_suburbs_zone_00"]}}}
 	},
 	{
 		"id": "$kulche_suburbs_decorations_01",
-		"title": "Backyard",
-		"text": "Property tax included!",
+		"type": "decoration",
 		"width": 1,
 		"height": 1,
-		"type": "decoration",
-    "rotation aware": true,
-    "draw ground": true,
+		"title": "Backyard",
+		"text": "Property tax included!",
 		"frames": [
       {"bmp": "decorations_backyard.png", "w": 32, "h": 23, "y": 0, "count": 4},
       {"bmp": "decorations_backyard.png", "w": 32, "h": 23, "y": 23, "count": 4},
       {"bmp": "decorations_backyard.png", "w": 32, "h": 16, "y": 46, "count": 4}
     ],
+    "rotation aware": true,
+    "draw ground": true,
 		"price": 0,
 		"monthly price": 0,
     "animation": [
@@ -65,15 +81,15 @@
     "type": "template",
     "width": 2,
     "height": 2,
-    "rotation aware": true,
     "frames": [],
-    "power": -2,
-    "water": -2,
+    "rotation aware": true,
     "script": "script_2x2.lua",
     "zone": "$kulche_suburbs_zone_00",
+    "draw ground": true,
+    "power": -2,
+    "water": -2,
     "people": 9,
-    "animation night light probability": 0.45,
-    "draw ground": true
+    "animation night light probability": 0.45
   },
   {
     "id": "$kulche_suburbs_2x2_00",
