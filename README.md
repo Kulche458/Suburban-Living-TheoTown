@@ -16,6 +16,5 @@ Planned upcoming features:
   - rebalance building statistics
   - more decoration buildings
   - allow choosing color combinations
-  - unclusterfuck backyard code (merge lobby's changes)
 
 (unprioritised)

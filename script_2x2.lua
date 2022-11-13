@@ -62,6 +62,25 @@ local function building_settings(x, y)
 
 end
 
+local removalActions = {
+    {
+        backyard = {{0, 2}, {1, 2}},
+        frames = {0, 3},
+    },
+    {
+        backyard = {{-1, 0}, {-1, 1}},
+        frames = {1, 0},
+    },
+    {
+        backyard = {{0, -1}, {1, -1}},
+        frames = {1, 2},
+    },
+    {
+        backyard = {{2, 0}, {2, 1}},
+        frames = {2, 3},
+    },
+}
+
 function script:event(x, y, level, event)
 
     if event == Script.EVENT_FINISHED then
@@ -70,18 +89,24 @@ function script:event(x, y, level, event)
 
         -- Remove backyards from demolished houses
     if event == Script.EVENT_REMOVE then
-        if ((Tile.getBuildingDraft(x, y + 2) == backyard_draft and Tile.getBuildingDraft(x + 1, y + 2) == backyard_draft) and (Tile.getBuildingFrame(x, y + 2) % 4 == 0 and Tile.getBuildingFrame(x + 1, y + 2) % 4 == 3)) then
-            Builder.remove(x, y + 2)
-            Builder.remove(x + 1, y + 2)
-        elseif ((Tile.getBuildingDraft(x - 1, y) == backyard_draft and Tile.getBuildingDraft(x - 1, y + 1) == backyard_draft) and (Tile.getBuildingFrame(x - 1, y) % 4 == 1 and Tile.getBuildingFrame(x - 1, y + 1) % 4 == 0)) then
-            Builder.remove(x - 1, y)
-            Builder.remove(x - 1, y + 1)
-        elseif ((Tile.getBuildingDraft(x, y - 1) == backyard_draft and Tile.getBuildingDraft(x + 1, y - 1) == backyard_draft) and (Tile.getBuildingFrame(x, y - 1) % 4 == 1 and Tile.getBuildingFrame(x + 1, y - 1) % 4 == 2)) then
-            Builder.remove(x, y - 1)
-            Builder.remove(x + 1, y - 1)
-        elseif ((Tile.getBuildingDraft(x + 2, y) == backyard_draft and Tile.getBuildingDraft(x + 2, y + 1) == backyard_draft) and (Tile.getBuildingFrame(x + 2, y) % 4 == 2 and Tile.getBuildingFrame(x + 2, y + 1) % 4 == 3)) then
-            Builder.remove(x + 2, y)
-            Builder.remove(x + 2, y + 1)
+        for i = 1, #removalActions do
+            local action = removalActions[i]
+            local backyard = action.backyard
+            local frames = action.frames
+            local matches = true
+            for j = 1, #backyard do
+                local xy = backyard[j]
+                matches = matches
+                    and Tile.getBuildingDraft(x + xy[1], y + xy[2]) == backyard_draft
+                    and Tile.getBuildingFrame(x + xy[1], y + xy[2]) % 4 == frames[j]
+            end
+            if matches then
+                for j = 1, #backyard do
+                    local xy = backyard[j]
+                    Builder.remove(x + xy[1], y + xy[2])
+                end
+                break
+            end
         end
     end
 
