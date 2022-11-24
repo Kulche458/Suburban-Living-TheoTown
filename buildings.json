@@ -67,7 +67,7 @@
     "rotation aware": true,
     "draw ground": true,
 		"price": 0,
-		"monthly price": -1,
+		"monthly income": 1,
     "animation": [
       {"id": "$kulche_suburbs_animation_fence_1x1_topleft", "frames": [0, 1, 4, 5, 8, 9]},
       {"id": "$kulche_suburbs_animation_fence_1x1_topright", "frames": [0, 3, 4, 7, 8, 11]},
