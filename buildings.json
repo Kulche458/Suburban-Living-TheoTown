@@ -139,7 +139,7 @@
     ]
   },
   {
-    "id": "$kulche_suburbs_2x2_02",
+    "id": "$kulche_suburbs_2x2_01",
     "type": "residential",
     "template": "$kulche_suburbs_2x2_template",
     "animation":[
@@ -151,6 +151,25 @@
       {"id": "$kulche_suburbs_animation_2x2_01_walls"},
       {"id": "$kulche_suburbs_animation_2x2_01_roof"},
       {"id": "$kulche_suburbs_animation_2x2_01_winter", "in winter": true},
+      {"id": "$kulche_suburbs_animation_fence_2x2_bottomleft", "frames": [1, 3]},
+      {"id": "$kulche_suburbs_animation_fence_2x2_bottomleft", "frame": 2},
+      {"id": "$kulche_suburbs_animation_fence_2x2_bottomright", "frames": [0, 2]},
+      {"id": "$kulche_suburbs_animation_fence_2x2_bottomright", "frame": 3}
+    ]
+  },
+  {
+    "id": "$kulche_suburbs_2x2_02",
+    "type": "residential",
+    "template": "$kulche_suburbs_2x2_template",
+    "animation":[
+      {"id": "$kulche_suburbs_animation_fence_2x2_topleft", "frames": [0, 2]},
+      {"id": "$kulche_suburbs_animation_fence_2x2_topleft", "frame": 1},
+      {"id": "$kulche_suburbs_animation_fence_2x2_topright", "frames": [1, 3]},
+      {"id": "$kulche_suburbs_animation_fence_2x2_topright", "frame": 0},
+      {"id": "$kulche_suburbs_animation_2x2_02_base"},
+      {"id": "$kulche_suburbs_animation_2x2_02_walls"},
+      {"id": "$kulche_suburbs_animation_2x2_02_roof"},
+      //{"id": "$kulche_suburbs_animation_2x2_02_winter", "in winter": true},
       {"id": "$kulche_suburbs_animation_fence_2x2_bottomleft", "frames": [1, 3]},
       {"id": "$kulche_suburbs_animation_fence_2x2_bottomleft", "frame": 2},
       {"id": "$kulche_suburbs_animation_fence_2x2_bottomright", "frames": [0, 2]},
