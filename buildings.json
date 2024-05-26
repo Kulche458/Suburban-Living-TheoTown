@@ -1,9 +1,8 @@
 [
 	{
-		"separator": true,
 		"id": "$kulche_suburbs_zone_00",
 		"type": "zone",
-		"title": "Suburban Zone",
+		"title": "Suburbs",
 		"text": "Small residential houses will be built here.\nNot influenced by inflation as much as other zones.",
 		"frames": [
 			{"bmp": "zone_tile.png"}
@@ -34,76 +33,7 @@
       {"bmp": "ground.png", "w": 32, "handle y": 7, "count": 4}
     ]
   },
-	{
-		"id": "$kulche_suburbs_decorations_00",
-		"type": "decoration",
-		"width": 1,
-		"height": 1,
-		"title": "Suburban Deco",
-		"text": "Decorational trees and other lush plantlife.",
-		"frames": [
-      {"bmp": "decorations.png", "w": 32, "count": 4}
-    ],
-    "rotation aware": true,
-    "draw ground": true,
-		"price": 1,
-		"monthly price": 0,
-		"meta": {"tags": {"decorator": {"zones": ["$kulche_suburbs_zone_00"]}}}
-	},
-	{
-		"id": "$kulche_suburbs_decorations_01",
-		"type": "decoration",
-		"width": 1,
-		"height": 1,
-		"title": "Backyard",
-		"text": "Property tax included!",
-		"frames": [
-      {"bmp": "decorations_backyard.png", "w": 32, "h": 23, "y": 0, "count": 4},
-      {"bmp": "decorations_backyard.png", "w": 32, "h": 23, "y": 23, "count": 4},
-      {"bmp": "decorations_backyard.png", "w": 32, "h": 16, "y": 46, "count": 4}
-    ],
-    "hidden": true,
-    "pickable": false,
-    "rotation aware": true,
-    "draw ground": true,
-		"price": 0,
-		"monthly income": 1,
-    "animation": [
-      {"id": "$kulche_suburbs_animation_fence_1x1_topleft", "frames": [0, 1, 4, 5, 8, 9]},
-      {"id": "$kulche_suburbs_animation_fence_1x1_topright", "frames": [0, 3, 4, 7, 8, 11]},
-      {"id": "$kulche_suburbs_animation_backyard_00", "frames": [0, 1, 2, 3]},
-      {"id": "$kulche_suburbs_animation_backyard_01", "frames": [4, 5, 6, 7]},
-      {"id": "$kulche_suburbs_animation_backyard_02", "frames": [8, 9, 10, 11]},
-      {"id": "$kulche_suburbs_animation_fence_1x1_bottomleft", "frames": [1, 2, 5, 6, 9, 10]},
-      {"id": "$kulche_suburbs_animation_fence_1x1_bottomright", "frames": [2, 3, 6, 7, 10, 11]}
-    ]
-	},
-	{
-		"id": "$kulche_suburbs_decorations_02",
-		"type": "decoration",
-		"width": 1,
-		"height": 1,
-		"title": "Backyard",
-		"text": "Property tax not included!",
-		"frames": [
-      {"bmp": "decorations_backyard.png", "w": 32, "h": 23, "y": 0, "count": 4},
-      {"bmp": "decorations_backyard.png", "w": 32, "h": 23, "y": 23, "count": 4},
-      {"bmp": "decorations_backyard.png", "w": 32, "h": 16, "y": 46, "count": 4}
-    ],
-    "rotation aware": true,
-    "draw ground": true,
-		"price": 10,
-		"monthly price": 0,
-    "animation": [
-      {"id": "$kulche_suburbs_animation_fence_1x1_topleft", "frames": [0, 1, 4, 5, 8, 9]},
-      {"id": "$kulche_suburbs_animation_fence_1x1_topright", "frames": [0, 3, 4, 7, 8, 11]},
-      {"id": "$kulche_suburbs_animation_backyard_00", "frames": [0, 1, 2, 3]},
-      {"id": "$kulche_suburbs_animation_backyard_01", "frames": [4, 5, 6, 7]},
-      {"id": "$kulche_suburbs_animation_backyard_02", "frames": [8, 9, 10, 11]},
-      {"id": "$kulche_suburbs_animation_fence_1x1_bottomleft", "frames": [1, 2, 5, 6, 9, 10]},
-      {"id": "$kulche_suburbs_animation_fence_1x1_bottomright", "frames": [2, 3, 6, 7, 10, 11]}
-    ]
-	},
+
   {
     "id": "$kulche_suburbs_2x2_template",
     "type": "template",
@@ -111,7 +41,7 @@
     "height": 2,
     "frames": [],
     "rotation aware": true,
-    "script": "script_2x2.lua",
+    "script": "buildingSettings.lua",
     "zone": "$kulche_suburbs_zone_00",
     "draw ground": true,
     "power": -2,
@@ -119,61 +49,38 @@
     "people": 9,
     "animation night light probability": 0.45
   },
+
   {
-    "id": "$kulche_suburbs_2x2_00",
+    "id": "$kulche_suburbs_2x2_00_poor",
     "type": "residential",
     "template": "$kulche_suburbs_2x2_template",
+    "level": 1,
     "animation":[
-      {"id": "$kulche_suburbs_animation_fence_2x2_topleft", "frames": [0, 2]},
-      {"id": "$kulche_suburbs_animation_fence_2x2_topleft", "frame": 1},
-      {"id": "$kulche_suburbs_animation_fence_2x2_topright", "frames": [1, 3]},
-      {"id": "$kulche_suburbs_animation_fence_2x2_topright", "frame": 0},
-      {"id": "$kulche_suburbs_animation_2x2_00_base"},
-      {"id": "$kulche_suburbs_animation_2x2_00_walls"},
-      {"id": "$kulche_suburbs_animation_2x2_00_roof"},
-      {"id": "$kulche_suburbs_animation_2x2_00_winter", "in winter": true},
-      {"id": "$kulche_suburbs_animation_fence_2x2_bottomleft", "frames": [1, 3]},
-      {"id": "$kulche_suburbs_animation_fence_2x2_bottomleft", "frame": 2},
-      {"id": "$kulche_suburbs_animation_fence_2x2_bottomright", "frames": [0, 2]},
-      {"id": "$kulche_suburbs_animation_fence_2x2_bottomright", "frame": 3}
+      {"id": "$kulche_suburbs_animation_2x2_00_base_poor"},
+      {"id": "$kulche_suburbs_animation_2x2_00_roof_poor"},
+      {"id": "$kulche_suburbs_animation_2x2_00_walls_poor"}
     ]
   },
   {
-    "id": "$kulche_suburbs_2x2_01",
+    "id": "$kulche_suburbs_2x2_00_middle",
     "type": "residential",
     "template": "$kulche_suburbs_2x2_template",
+    "level": 2,
     "animation":[
-      {"id": "$kulche_suburbs_animation_fence_2x2_topleft", "frames": [0, 2]},
-      {"id": "$kulche_suburbs_animation_fence_2x2_topleft", "frame": 1},
-      {"id": "$kulche_suburbs_animation_fence_2x2_topright", "frames": [1, 3]},
-      {"id": "$kulche_suburbs_animation_fence_2x2_topright", "frame": 0},
-      {"id": "$kulche_suburbs_animation_2x2_01_base"},
-      {"id": "$kulche_suburbs_animation_2x2_01_walls"},
-      {"id": "$kulche_suburbs_animation_2x2_01_roof"},
-      {"id": "$kulche_suburbs_animation_2x2_01_winter", "in winter": true},
-      {"id": "$kulche_suburbs_animation_fence_2x2_bottomleft", "frames": [1, 3]},
-      {"id": "$kulche_suburbs_animation_fence_2x2_bottomleft", "frame": 2},
-      {"id": "$kulche_suburbs_animation_fence_2x2_bottomright", "frames": [0, 2]},
-      {"id": "$kulche_suburbs_animation_fence_2x2_bottomright", "frame": 3}
+      {"id": "$kulche_suburbs_animation_2x2_00_base_poor"},
+      {"id": "$kulche_suburbs_animation_2x2_00_roof_poor", "y": -1},
+      {"id": "$kulche_suburbs_animation_2x2_00_walls_rich"}
     ]
   },
   {
-    "id": "$kulche_suburbs_2x2_02",
+    "id": "$kulche_suburbs_2x2_00_rich",
     "type": "residential",
     "template": "$kulche_suburbs_2x2_template",
+    "level": 3,
     "animation":[
-      {"id": "$kulche_suburbs_animation_fence_2x2_topleft", "frames": [0, 2]},
-      {"id": "$kulche_suburbs_animation_fence_2x2_topleft", "frame": 1},
-      {"id": "$kulche_suburbs_animation_fence_2x2_topright", "frames": [1, 3]},
-      {"id": "$kulche_suburbs_animation_fence_2x2_topright", "frame": 0},
-      {"id": "$kulche_suburbs_animation_2x2_02_base"},
-      {"id": "$kulche_suburbs_animation_2x2_02_walls"},
-      {"id": "$kulche_suburbs_animation_2x2_02_roof"},
-      //{"id": "$kulche_suburbs_animation_2x2_02_winter", "in winter": true},
-      {"id": "$kulche_suburbs_animation_fence_2x2_bottomleft", "frames": [1, 3]},
-      {"id": "$kulche_suburbs_animation_fence_2x2_bottomleft", "frame": 2},
-      {"id": "$kulche_suburbs_animation_fence_2x2_bottomright", "frames": [0, 2]},
-      {"id": "$kulche_suburbs_animation_fence_2x2_bottomright", "frame": 3}
+      {"id": "$kulche_suburbs_animation_2x2_00_base_rich"},
+      {"id": "$kulche_suburbs_animation_2x2_00_roof_rich"},
+      {"id": "$kulche_suburbs_animation_2x2_00_walls_rich"}
     ]
   }
 ]

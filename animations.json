@@ -1,0 +1,93 @@
+[
+  {
+    "id": "$kulche_suburbs_animation_2x2_template_roof_poor",
+    "type": "template",
+    "rotation aware": true,
+    "colors": ["#665B5C", "#725856", "#7F6259", "#594947", "#564F4E", "#545659"]
+  },
+  {
+    "id": "$kulche_suburbs_animation_2x2_template_walls_poor",
+    "type": "template",
+    "rotation aware": true,
+    "colors": ["#F2EFE6", "#B2AEA9", "#B29F85", "#E8DAC0", "#BAC7D8", "#97AAB2", "#BF987C", "#E5C6B7", "#979EB2", "#8C827E"]
+  },
+  {
+    "id": "$kulche_suburbs_animation_2x2_template_roof_rich",
+    "type": "template",
+    "rotation aware": true,
+    "colors": ["#665155", "#7F5652", "#8C6B5B", "#5B6066", "#A5675B", "#995854"]
+  },
+  {
+    "id": "$kulche_suburbs_animation_2x2_template_walls_rich",
+    "type": "template",
+    "rotation aware": true,
+    "colors": ["#F4F3EF", "#F4CE9F", "#A09D9B", "#A8C3DD", "#E8BFA7", "#C7BEE0", "#AACC99", "#D8D0CB", "#EAD8BE", "#879BAD"]
+  },
+
+  {
+    "id": "$kulche_suburbs_animation_2x2_00_base_poor",
+    "type": "animation",
+    "rotation aware": true,
+    "frames": [
+      {"bmp": "2x2_00_base_poor.png", "w": 64, "h": 39, "x": 0, "handle x": 0, "handle y": 23},
+      {"bmp": "2x2_00_base_poor.png", "w": 64, "h": 39, "x": 64, "handle x": 0, "handle y": 23},
+      {"bmp": "2x2_00_base_poor.png", "w": 64, "h": 39, "x": 128, "handle x": 0, "handle y": 23},
+      {"bmp": "2x2_00_base_poor.png", "w": 64, "h": 39, "x": 192, "handle x": 0, "handle y": 23}
+    ]
+	},
+	{
+    "id": "$kulche_suburbs_animation_2x2_00_roof_poor",
+    "type": "animation",
+    "template": "$kulche_suburbs_animation_2x2_template_roof_poor",
+    "frames": [
+      {"bmp": "2x2_00_roof.png", "w": 44, "h": 22, "x": 0, "handle x": -11, "handle y": 19},
+      {"bmp": "2x2_00_roof.png", "w": 38, "h": 22, "x": 44, "handle x": -7, "handle y": 18},
+      {"bmp": "2x2_00_roof.png", "w": 44, "h": 22, "x": 82, "handle x": -9, "handle y": 13},
+      {"bmp": "2x2_00_roof.png", "w": 38, "h": 22, "x": 126, "handle x": -19, "handle y": 17}
+    ]
+	},
+	{
+    "id": "$kulche_suburbs_animation_2x2_00_walls_poor",
+    "type": "animation",
+    "template": "$kulche_suburbs_animation_2x2_template_walls_poor",
+    "frames": [
+      {"bmp": "2x2_00_walls.png", "w": 42, "h": 21, "x": 0, "handle x": -12, "handle y": 8},
+      {"bmp": "2x2_00_walls.png", "w": 36, "h": 21, "x": 42, "handle x": -8, "handle y": 10},
+      {"bmp": "2x2_00_walls.png", "w": 42, "h": 21, "x": 78, "handle x": -10, "handle y": 5},
+      {"bmp": "2x2_00_walls.png", "w": 36, "h": 21, "x": 120, "handle x": -20, "handle y": 10}
+    ]
+	},
+	{
+    "id": "$kulche_suburbs_animation_2x2_00_base_rich",
+    "type": "animation",
+    "rotation aware": true,
+    "frames": [
+      {"bmp": "2x2_00_base_rich.png", "w": 64, "h": 39, "x": 0, "handle x": 0, "handle y": 23},
+      {"bmp": "2x2_00_base_rich.png", "w": 64, "h": 39, "x": 64, "handle x": 0, "handle y": 23},
+      {"bmp": "2x2_00_base_rich.png", "w": 64, "h": 39, "x": 128, "handle x": 0, "handle y": 23},
+      {"bmp": "2x2_00_base_rich.png", "w": 64, "h": 39, "x": 192, "handle x": 0, "handle y": 23}
+    ]
+	},
+	{
+    "id": "$kulche_suburbs_animation_2x2_00_roof_rich",
+    "type": "animation",
+    "template": "$kulche_suburbs_animation_2x2_template_roof_rich",
+    "frames": [
+      {"bmp": "2x2_00_roof.png", "w": 44, "h": 22, "x": 0, "handle x": -11, "handle y": 20},
+      {"bmp": "2x2_00_roof.png", "w": 38, "h": 22, "x": 44, "handle x": -7, "handle y": 19},
+      {"bmp": "2x2_00_roof.png", "w": 44, "h": 22, "x": 82, "handle x": -9, "handle y": 14},
+      {"bmp": "2x2_00_roof.png", "w": 38, "h": 22, "x": 126, "handle x": -19, "handle y": 18}
+    ]
+	},
+	{
+    "id": "$kulche_suburbs_animation_2x2_00_walls_rich",
+    "type": "animation",
+    "template": "$kulche_suburbs_animation_2x2_template_walls_rich",
+    "frames": [
+      {"bmp": "2x2_00_walls.png", "w": 42, "h": 21, "x": 0, "handle x": -12, "handle y": 8},
+      {"bmp": "2x2_00_walls.png", "w": 36, "h": 21, "x": 42, "handle x": -8, "handle y": 10},
+      {"bmp": "2x2_00_walls.png", "w": 42, "h": 21, "x": 78, "handle x": -10, "handle y": 5},
+      {"bmp": "2x2_00_walls.png", "w": 36, "h": 21, "x": 120, "handle x": -20, "handle y": 10}
+    ]
+	}
+]
