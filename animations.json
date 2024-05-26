@@ -1,5 +1,42 @@
 [
   {
+    "id": "$kulche_suburbs_animation_fence_2x2_topleft",
+    "type": "animation",
+    "speed": 0,
+    "frames": [
+      {"bmp": "fence_2x2.png", "w": 32, "x": 32, "handle x": 0, "handle y": 20},
+      {"bmp": "fence_2x2.png", "w": 1, "h": 1, "x": 2, "y": 0}
+    ]
+  },
+  {
+    "id": "$kulche_suburbs_animation_fence_2x2_topright",
+    "type": "animation",
+    "speed": 0,
+    "frames": [
+      {"bmp": "fence_2x2.png", "w": 32, "x": 0, "handle x": -32, "handle y": 20},
+      {"bmp": "fence_2x2.png", "w": 1, "h": 1, "x": 2, "y": 0}
+    ]
+  },
+  {
+    "id": "$kulche_suburbs_animation_fence_2x2_bottomleft",
+    "type": "animation",
+    "speed": 0,
+    "frames": [
+      {"bmp": "fence_2x2.png", "w": 32, "x": 0, "handle x": 0, "handle y": 4},
+      {"bmp": "fence_2x2.png", "w": 1, "h": 1, "x": 2, "y": 0}
+    ]
+  },
+  {
+    "id": "$kulche_suburbs_animation_fence_2x2_bottomright",
+    "type": "animation",
+    "speed": 0,
+    "frames": [
+      {"bmp": "fence_2x2.png", "w": 32, "x": 32, "handle x": -32, "handle y": 4},
+      {"bmp": "fence_2x2.png", "w": 1, "h": 1, "x": 2, "y": 0}
+    ]
+  },
+
+  {
     "id": "$kulche_suburbs_animation_2x2_template_roof_poor",
     "type": "template",
     "rotation aware": true,
